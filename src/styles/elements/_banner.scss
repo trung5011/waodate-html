@@ -1,0 +1,61 @@
+.banner-top__content{
+	position: relative;
+	.banner-top__caption{
+		position: absolute;
+		bottom: 20rem;
+		left: 5.6rem;
+		@include media("<xs") {
+			.h1{
+				font-size: 2.4rem!important;
+				line-height: 1.2;
+			}
+			.h4{
+				font-size: 1.4rem!important;
+			}
+			bottom: 2rem;
+		}
+	}
+
+
+}
+.banner-ads__img{
+	padding-left: 7.2rem;
+	padding-right: 7.2rem;
+}
+.bd-r{
+	border-right:2px solid rgba(8, 21, 38, 0.1)
+}
+.banner-ads .col-md-6{
+	padding: 0;
+}
+.banner-ads{
+	padding:3.2rem 0;
+	&__content{
+		padding: 2.9rem 0;
+		background-color: #f2f3f4;
+		border-radius:3px;
+	}
+}
+
+
+
+.banner-midde{
+	&__content{
+		position: relative;
+	}
+	&__caption{
+		position: absolute;
+		text-align: center;
+		width: 100%;
+		top: 13rem;
+
+		h2{
+			font-weight: bold;
+		}
+		
+	}
+	.caption-center{
+		top: 50%;
+		transform: translateY(-50%);
+	}
+}

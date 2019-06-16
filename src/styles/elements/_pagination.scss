@@ -1,0 +1,52 @@
+.ps-pagination {
+    @include clearfix;
+    text-align: center;
+    .pagination {
+        margin: 0;
+        display: inline-block;
+        font-size: 0;
+        li {
+            display: inline-block;
+            text-align: center;
+            margin-right: 1rem;
+            > a {
+                padding: 0;
+                width: 50px;
+                position: relative;
+                display: inline-block;
+                z-index: 30;
+                font-size: 1.6rem;
+                color: #323232;
+                line-height: 50px;
+                border: none;
+                background-color: #e4e4e4;
+                line-height: 50px;
+                @include border-radius(4px);
+                font-weight: 400;
+                &:hover {
+                    background-color: $color-1st;
+                    color: #fff;
+                }
+            }
+            &.active {
+                border: none;
+                a {
+                   color: #fff;
+                    background-color: $color-1st;
+                }
+            }
+        }
+    }
+    @include media("<sm") {
+        .pagination {
+            > li {
+                > a {
+                    width: 40px;
+                    line-height: 40px;
+                    font-size: 1.4rem;
+                }
+
+            }
+        }
+    }
+}

@@ -1,0 +1,226 @@
+@font-face {
+    font-family: "Calibri";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/Calibri/Calibri.eot?") format("eot"),
+    url("../fonts/Calibri/Calibri.woff") format("woff"),
+    url("../fonts/Calibri/Calibri.ttf") format("truetype"),
+    url("../fonts/Calibri/Calibri.svg") format("svg"),
+}
+
+@font-face {
+    font-family: "Calibri";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/Calibri-Bold/Calibri-Bold.eot?") format("eot"),
+    url("../fonts/Calibri-Bold/Calibri-Bold.woff") format("woff"),
+    url("../fonts/Calibri-Bold/Calibri-Bold.ttf") format("truetype"),
+    url("../fonts/Calibri-Bold/Calibri-Bold.svg") format("svg"),
+}
+@font-face {
+    font-family: "Norwester";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/Norwester-Regular/Norwester-Regular.eot?") format("eot"),
+    url("../fonts/Norwester-Regular/Norwester-Regular.woff") format("woff"),
+    url("../fonts/Norwester-Regular/Norwester-Regular.ttf") format("truetype"),
+    url("../fonts/Norwester-Regular/Norwester-Regular.svg") format("svg"),
+}
+* {
+    font-family: $font-2nd;
+    font-weight: 400;
+}
+
+html {
+	// @include media(">lg") {
+    //     font-size: (10vw/19.2);
+	// }
+	font-size: 7.5px;
+
+}
+.container{
+	max-width: 174.4rem;
+}
+.container-small{
+	max-width: 144.8rem;
+	margin: auto;
+}
+body {
+	font-size: 1.4rem;
+	background-color:#d8d8d8;
+}
+.wd-icon{
+	margin-right: 0.3rem;
+}
+h1, h2, h3, h4, h5, h6 {
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-family: $font-2nd;
+    color: $color-heading;
+    font-weight: 700;
+
+    a {
+        color: inherit;
+    }
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{
+	font-weight: 400;
+}
+.f-bold{
+	font-weight: 700;
+}
+.f-no-bold{
+	font-weight: 400;
+}
+h1 {
+    font-size: $size-1st;
+}
+
+h2 {
+    font-size: $size-2st;
+}
+
+h3 {
+    font-size: $size-3st;
+}
+
+h4 {
+    font-size: $size-4st;
+}
+
+h5 {
+    font-size: $size-5st;
+}
+
+h6 {
+    font-size: $size-6st;
+}
+
+.h1 {
+	font-size: $size-1st!important;
+	line-height: 5.8rem;
+}
+
+.h2 {
+    font-size: $size-2st!important;
+}
+
+.h3 {
+    font-size: $size-3st!important;
+}
+
+.h4 {
+    font-size: $size-4st!important;
+}
+
+.h5 {
+    font-size: $size-5st!important;
+}
+
+.h6 {
+    font-size: $size-6st!important;
+}
+.small{
+	font-size:1.2rem;
+	line-height: 1.6rem;
+}
+p {
+    font-size: 1.4rem;
+    line-height: 1.43;
+    color: $color-text;
+    span {
+        font-family: inherit;
+        color: inherit;
+        font-size: inherit;
+    }
+    @include media("<sm") {
+        font-size: 1.4rem;
+    }
+}
+
+a {
+    position: relative;
+    color: inherit;
+    text-decoration: none;
+    @include transition(all 0.4s ease);
+    &:hover {
+        color: $color-1st;
+    }
+}
+
+a,
+input,
+textarea,
+button,
+select {
+    outline: none;
+}
+
+a:hover,
+h1:focus,
+h2:focus,
+h3:focus,
+h4:focus,
+h5:focus,
+h6:focus {
+    text-decoration: none;
+}
+
+a:focus,
+button:focus,
+select:focus,
+input:focus,
+textarea:focus {
+    outline: none;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+iframe {
+    border: 0;
+    max-width: 100%;
+    width: 100%;
+}
+
+.ps-document {
+    ul, ol {
+        margin-bottom: 10px;
+        ul, ol {
+            margin-bottom: 0;
+        }
+    }
+    ul li, ol li {
+        color: $color-text;
+        font-size: $document-font-size;
+        line-height: 1.6em;
+    }
+    p {
+        margin-bottom: 15px;
+        strong {
+            color: $color-heading;
+        }
+    }
+}
+ul{
+	padding-left: 0;
+	list-style: none;
+}
+
+
+.color-white{
+	color:white;
+}
+.bg-white{
+	background-color: white;
+}
+.color-text-1{
+	color:$color-text;
+}
+.color-text-2{
+	color:$color-text-2;
+}
