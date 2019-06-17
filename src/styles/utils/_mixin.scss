@@ -90,3 +90,16 @@
     @include border-radius(50%);
     background-color: $background;
 }
+
+
+@function rem($size) {
+	$remSize: $size / 10px;
+	@return #{$remSize}rem;
+}
+
+@mixin placeholder {
+	::-webkit-input-placeholder {@content}
+	:-moz-placeholder           {@content}
+	::-moz-placeholder          {@content}
+	:-ms-input-placeholder      {@content}  
+  }

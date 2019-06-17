@@ -126,4 +126,43 @@ sync2.on("click", ".owl-item", function (e) {
 	var number = $(this).index();
 	sync1.data('owl.carousel').to(number, 300, true);
 });
+
+$(document).ready(function () {
+	insertEl();
+	headerAction();
+});
+
+$(window).on('resize', function () {
+	insertEl();
+});
+
+$(window).on('scroll', function () {
+	if ($(window).scrollTop() > 100) {
+		$('.wao-header').addClass('wao-header--isScroll');
+	} else {
+		$('.wao-header').removeClass('wao-header--isScroll');
+	}
+});
+
+function insertEl() {
+	var minMedia = window.matchMedia("(max-width: 767px)").matches;
+	var headerLogo = $('.wao-topbar .wao-topbar__logo');
+	var topbarLeft = $('.wao-topbar .wao-topbar__left');
+
+	if (minMedia) {
+		headerLogo.appendTo(topbarLeft);
+	}
+}
+
+function headerAction() {
+	var btnSearch = $('.wao-header .wao-topbar__search-btn');
+	var btnToogle = $('.wao-header .wao-topbar__toggle');
+	btnSearch.on('click', function () {
+		$('.wao-header .wao-topbar__search').toggleClass('active');
+	});
+
+	btnToogle.on('click', function () {
+		$('.wao-menu').slideToggle();
+	});
+}
 //# sourceMappingURL=main.js.map
