@@ -1828,5 +1828,7 @@ html .bg--parallax {
     color: tomato; } }
 
 /*6. CUSTOM*/
+body {
+  color: yellow; }
 
 /*# sourceMappingURL=style.css.map */

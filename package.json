@@ -43,6 +43,7 @@
 	},
 	"devDependencies": {
 		"del": "^4.1.1",
-		"gulp": "^3.9.1"
+		"gulp": "^3.9.1",
+		"gulp-inject": "^5.0.2"
 	}
 }
