@@ -1,8 +1,15 @@
 .home-users {
-	overflow: hidden;
+	// overflow: hidden;
+	margin-bottom: 2.4rem;
+	.container-small {
+		@media (min-width: 1200px) {
+			padding-right: 9.8rem;
+			padding-left: 9.8rem;
+		}
+	}
 }
 .home-users .lists-user{
-	margin-top: -10rem;
+	margin-top: -6.4rem;
 	&__title{
 		height: 10rem;
 		background-color: white;
@@ -29,9 +36,9 @@
 		li{
 			width: 50%;
 			a{
-				font-size: $size-3st;
-				color:$color-text;
-				height: 10rem;
+				font-size: 2rem;
+				color:#081526;
+				height: 6.4rem;
 				display: flex;
 				justify-content: center;
 				align-items: center;
@@ -96,21 +103,35 @@
 		display: flex;
 		// flex-wrap: wrap;
 		flex-direction: column;
+		margin-bottom: 2.4rem;
+		border-radius: 8px;
+		overflow: hidden;
 		@include media(">md"){
 			flex-direction: row;
+			position: relative;
+			&::before{
+				content: '';
+				height: 100%;
+				width: 31.5%;
+				background-color: #f2f3f4;
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
 		}
 	}
 	&__left{
-		padding-left: 8rem;
+		padding-left: 3.6rem;
 		padding-top: 16.6rem;
 		@include media(">md"){
-			width: 24%;
+			width: 23%;
 		}
 		h2{
 			line-height: 1.2;
 		}
 		.btn-featured{
 			padding: 1rem 4.8rem;
+			font-size: 1.4rem;
 		}
 		@include media("<xs") {
 			width: 100%;
@@ -124,22 +145,30 @@
 
 	}
 	&__desc{
-		padding: 3.2rem 0;
+		padding: 1.6rem 0 2rem 0;
+		position: relative;
+		font-size: 1.4rem;
 		@include media("<xs") {
 			padding-top: 1rem;
-			padding-bottom: 2rem;			
+			padding-bottom: 2rem;
 		}
 	}
 	&__right{
 		padding-right: 4rem;
-		padding-bottom: 8.2rem;
-		padding-left: 7rem;
+		// padding-bottom: 8.2rem;
+		padding-left: 3.2rem;
 		@include media("<xs") {
 			// width: 100%;
 			padding: 2rem;
 		}
 		@include media(">md"){
-			width: 76%;
+			width: 77%;
+		}
+	}
+	&__title {
+		h2 {
+			font-size: 4rem;
+			margin-bottom: 0;
 		}
 	}
 	.sync2__nav {
@@ -194,7 +223,8 @@
 		
 		.wd-icon{
 			color: white;
-			font-size: 3.2rem;
+			// font-size: 3.2rem;
+			font-size: rem(18.3px);
 			margin: 0;
 		}
 	}

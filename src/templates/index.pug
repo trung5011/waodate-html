@@ -24,12 +24,12 @@ block body
 	section.banner-ads.d-none.d-sm-block
 		.container
 			.row.banner-ads__content
-				.col-md-6
-					.banner-ads__img.bd-r
-						img.img-fluid(src="./img/ads-01.png", alt="")
-				.col-md-6
+				.col-md-8.mx-auto
 					.banner-ads__img
-						img.img-fluid(src="./img/ads-02.png", alt="")
+						img.img-fluid(src="./img/ads-01.png", alt="")
+				//- .col-md-6
+				//- 	.banner-ads__img
+				//- 		img.img-fluid(src="./img/ads-02.png", alt="")
 	section.featured-concepts
 		.container
 			.row
@@ -37,13 +37,13 @@ block body
 					.featured-concepts__content.bg-white
 						.featured-concepts__left
 							.featured-concepts__caption
-								h2.featured-concepts__title.h1.f-bold
+								h2.featured-concepts__title.f-bold
 									| Concept 
 									br.d-none.d-sm-block
 									| nổi bật
-								p.featured-concepts__desc.h4
+								p.featured-concepts__desc
 									| Nam blandit, nisl vitae scelerisque tincidunt, dolor orci faucibus nulla, quis fringilla diam magna sed elit. Praesent consectetur, leo a mollis fermentum, lectus sem facilisis neque.
-								a.btn-featured.btn.btn-primary.f-bold.text-uppercase.h4(href="#") Trở nên nổi bật
+								a.btn-featured.btn.btn-primary.f-bold.text-uppercase(href="#") Trở nên nổi bật
 						.featured-concepts__right
 							#sync2.owl-carousel.owl-theme
 								.sync2__nav
@@ -145,10 +145,10 @@ block body
 					.banner-top_img
 						img.img-fluid(src="./img/banner-midde-01.png", alt="")
 					.banner-midde__caption
-						h2.banner-midde__title.color-white.h1
+						h2.banner-midde__title.color-white
 							| Cộng đồng với hơn 30.000 thành viên
-	section.home-users.pb-30
-		.container-small
+	section.home-users
+		.container-smaller
 			.row
 				.col-md-4
 					include ../lib/slidebar-left/index
@@ -169,13 +169,17 @@ block body
 											.user-item__left
 												.user-item__thumbnail
 													img(src="./img/slider-01.png", alt="")
+												.user-concept__connect
+													a(href="#").btn.btn-primary.h6 Xem chi tiết
+													a(href="#").btn.btn-primary.h6 Tham gia concept
+													a(href="#").color-text-2 7k đăng ký 
 											.user-item__right
-												.user-item__info.pb-10
+												.user-item__info.pb-15
 													.user-item__info-left
 														.user-item__avatar
 															img(src="./img/nav-01.png", alt="")
 														.user-item__default.pl-10
-															.user-item__top
+															.user-item__top.user-item__top--active
 																h3.user-item__name.h4.pr-10 Sơn
 																span.user-item__age.h4 16t
 															.user-item__bottom.color-text-2
@@ -187,46 +191,44 @@ block body
 																	| 7k
 																a(href="#").user-item__location.mr-20
 																	i.wd-icon.icon-map-pin
-																	| TP.HCM	
+																	| TP.HCM
 													.user-item__connect
-														a(href="#").user-item__like.mr-20
+														a(href="#").user-item__like
 															i.wd-icon.icon-normal
-															| Thích	
 														a(href="#").user-item__message
 															i.wd-icon.icon-chat
-															| Nhắn tin
-												.user-item__concept.pt-10
+														a(href="#").user-item__message
+															i.wd-icon.fa.fa-ellipsis-h
+												.user-item__concept.pt-12
 													.user-concept__left
 														.user-concept__title
-															h3.h4 Lorem ipsum dolor sit amet.
+															h3.pb-12.mb-0 Lorem ipsum dolor sit amet.
 														ul.user-concept__info
-															li
-																span.user-concept__time
+															li.user-concept__time
+																span.f-bold
 																	| Thời gian : 
-																| 18:00 - 05/06/2019	
-															li
-																span.user-concept__address
+																span 18:00 - 05/06/2019	
+															li.user-concept__address
+																span.f-bold
 																	| Địa điểm : 4
-																| 05 Kenna Points Suite 749	
-															li
-																span.user-concept__age
+																span 05 Kenna Points Suite 749
+														ul.user-concept__info
+															li.user-concept__age
+																span.f-bold
 																	| Đối Tượng : 
-																| Nam tuổi từ 24 – 32	
-															li
-																span.user-concept__price
+																span Nam tuổi từ 24 – 32	
+															li.user-concept__price
+																span.f-bold
 																	| Tổng chi phí : 
-																| $ 342.23	
-															li
-																span.user-concept__ob-price
+																span $ 342.23	
+															li.user-concept__ob-price
+																span.f-bold
 																	| Người tham gia trả : 
-																| 50%		
+																span 50%
 													.user-concept__right
 														.user-concept__desc
-															p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis sunt, fuga mollitia ratione nemo ex enim eaque ullam esse architecto!
-														.user-concept__connect
-															a(href="#").btn.btn-primary.h6.mr-20 Xem chi tiết
-															a(href="#").btn.btn-primary.h6.mr-20 Tham gia concept
-															a(href="#").color-text-2 7k đăng ký 
+															p Donec quis felis quis dui rutrum euismod. Morbi aliquet tincidunt vulputate. Nam semper ipsum nec sem efficitur auctor. Morbi arcu tortor, euismod congue vulputate nec, luctus eu nisi. Donec gravida consectetur velit id auctor. Phasellus quis lacinia lorem, convallis ultrices ante…
+														
 									a.btn-list-all(href="#") Xem tất cả
 							#friend-girl.tab-pane.fade
 								.lists-user-item
@@ -259,10 +261,8 @@ block body
 													.user-item__connect
 														a(href="#").user-item__like.mr-20
 															i.wd-icon.icon-normal
-															| Thích	
 														a(href="#").user-item__message
 															i.wd-icon.icon-chat
-															| Nhắn tin
 												.user-item__concept.pt-10
 													.user-concept__left
 														.user-concept__title
@@ -296,14 +296,14 @@ block body
 															a(href="#").btn.btn-primary.h6.mr-20 Tham gia concept
 															a(href="#").color-text-2 7k đăng ký 
 									a.btn-list-all(href="#") Xem tất cả						
-	section.banner-midde.mt-30.d-none.d-sm-block
+	section.banner-midde.d-none.d-sm-block
 		.container
 			.row
 				.banner-midde__content
 					.banner-top_img
 						img.img-fluid(src="./img/banner-midde-02.png", alt="")
 					.banner-midde__caption.caption-center
-						h2.banner-midde__title.h1.color-white
+						h2.banner-midde__title.color-white
 							| Khám phá các câu chuyện, bí kiếp yêu
 	section.blog-home
 		.container
@@ -359,10 +359,10 @@ block body
 	section.banner-ads
 		.container
 			.row.banner-ads__content
-				.col-md-6
-					.banner-ads__img.bd-r
-						img.img-fluid(src="./img/ads-01.png", alt="")
-				.col-md-6
+				.col-md-8.mx-auto
 					.banner-ads__img
-						img.img-fluid(src="./img/ads-02.png", alt="")
+						img.img-fluid(src="./img/ads-01.png", alt="")
+				//- .col-md-6
+				//- 	.banner-ads__img
+				//- 		img.img-fluid(src="./img/ads-02.png", alt="")
 		

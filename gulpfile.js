@@ -9,7 +9,7 @@ var taskPath = './tasks/';
 var taskList = require('fs').readdirSync(taskPath);
 // Load tất cả các task
 taskList.forEach(function (taskFile) {
-    require(taskPath + taskFile)(gulp, plugins, browserSync,del);
+	require(taskPath + taskFile)(gulp, plugins, browserSync,del);
 });
 
 // Lệnh mặc định của Gulp
@@ -28,7 +28,7 @@ gulp.task('default', function (callback) {
 		'watch',
 		'browser-sync',
 		callback
-  );
+);
 });
 gulp.task('build', function (callback) {
 	runSequence(
@@ -49,5 +49,5 @@ gulp.task('build', function (callback) {
 		'autoprefixer',
 		'browser-sync',
 		callback
-  );
+	);
 });

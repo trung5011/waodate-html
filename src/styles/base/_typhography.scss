@@ -39,11 +39,15 @@ html {
 
 }
 .container{
-	// max-width: 116.8rem;
-	max-width: 1168px;
+	max-width: 116.8rem;
+	// max-width: 1168px;
 }
 .container-small{
 	max-width: 144.8rem;
+	margin: auto;
+}
+.container-smaller{
+	max-width: 97.2rem;
 	margin: auto;
 }
 body {
@@ -224,4 +228,15 @@ ul{
 }
 .color-text-2{
 	color:$color-text-2;
+}
+
+
+.pb-12 {
+	padding-bottom: 1.2rem;
+}
+.pt-12 {
+	padding-top: 1.2rem;
+}
+.pb-15 {
+	padding-bottom: 1.5rem;
 }
