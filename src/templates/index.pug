@@ -92,7 +92,7 @@ block body
 													.concept-item__avatar
 														img(src="./img/nav-01.png", alt="")
 													.concept-item__default.pl-10
-														.concept-item__top
+														.concept-item__top.concept-item__top--active
 															h3.concept-item__name.h4.pr-10 Sơn
 															span.concept-item__age.h4 16t
 														.concept-item__bottom.color-text-2
@@ -106,40 +106,36 @@ block body
 																i.wd-icon.icon-map-pin
 																| TP.HCM	
 												.concept-item__connect
-													a(href="#").concept-item__like.mr-20
-														i.wd-icon.icon-favorite
+													a(href="#").concept-item__like
+														i.wd-icon.fa.fa-heart-o
 													a(href="#").concept-item__message
 														i.wd-icon.icon-chat
 											.concept__title.pt-20
-												h3.h2.f-bold Lorem ipsum dolor sit amet.			
+												h3.f-bold Fusce id nulla id dui fringilla vestibulum ut sit amet velit
 											.concept-item__content
 												.concept__left
 													ul.concept__info
-														li
-															span.concept__time
-																| Thời gian : 
-															| 18:00 - 05/06/2019	
-														li
-															span.concept__address
-																| Địa điểm :
-															| 05 Kenna Points Suite 749	
-														li
-															span.concept__age
-																| Đối Tượng : 
-															| Nam tuổi từ 24 – 32	
-														li
-															span.concept__price
-																| Tổng chi phí : 
-															| $ 342.23	
-														li
-															span.concept__ob-price
-																| Người tham gia trả : 
-															| 50%		
+														li.concept__time
+															span.f-bold Thời gian : 
+															span 18:00 - 05/06/2019
+														li.concept__address
+															span.f-bold Địa điểm :
+															span 05 Kenna Points Suite 749
+													ul.concept__info
+														li.concept__age
+															span.f-bold Đối Tượng : 
+															span Nam tuổi từ 24 – 32
+														li.concept__price
+															span.f-bold Tổng chi phí : 
+															span $ 342.23
+														li.concept__ob-price
+															span.f-bold Người tham gia trả : 
+															span 50%
 												.concept__right
 													.concept__desc
-														p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis sunt, fuga mollitia ratione nemo ex enim eaque ullam esse architecto!
+														p Phasellus varius varius nisi ut posuere. Pellentesque congue, ipsum vestibulum tempor commodo, tortor lectus facilisis turpis, ac molestie purus ex ac sapien. Praesent tristique, est vitae elementum egestas, ex tortor porttitor ligula, at gravida orci sapien sit amet odio. Maecenas in metus turpis. Suspendisse pellentesque at dolor dictum facilisis. Donec…
 											.concept__connect
-												a(href="#").btn.btn-primary.text-uppercase.f-bold.h6.mr-30 Xem chi tiết
+												a(href="#").btn.btn-primary.text-uppercase.f-bold.h6 Xem chi tiết
 												a(href="#").btn.btn-active.btn-primary.text-uppercase.f-bold.h6.mr-10 Tham gia 
 												a(href="#").color-text-2 7k đăng ký
 	section.banner-midde
@@ -155,13 +151,7 @@ block body
 		.container-small
 			.row
 				.col-md-4
-					.sidebar-left.d-none.d-sm-block
-						aside.widget.sidebar-banner-ads
-							.sidebar-banner-ads__img
-								img.img-fluid(src="./img/sidebar-ads-01.png", alt="")
-						aside.widget.sidebar-banner-ads
-							.sidebar-banner-ads__img
-								img.img-fluid(src="./img/sidebar-ads-02.png", alt="")
+					include ../lib/slidebar-left/index
 				.col-md-8
 					.lists-user
 						ul.nav.nav-tabs

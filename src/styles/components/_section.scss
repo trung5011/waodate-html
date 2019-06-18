@@ -94,13 +94,18 @@
 .featured-concepts{
 	&__content{
 		display: flex;
-		flex-wrap: wrap;
+		// flex-wrap: wrap;
+		flex-direction: column;
+		@include media(">md"){
+			flex-direction: row;
+		}
 	}
 	&__left{
-		width: 24%;
 		padding-left: 8rem;
 		padding-top: 16.6rem;
-		
+		@include media(">md"){
+			width: 24%;
+		}
 		h2{
 			line-height: 1.2;
 		}
@@ -126,13 +131,15 @@
 		}
 	}
 	&__right{
-		width: 76%;
 		padding-right: 4rem;
 		padding-bottom: 8.2rem;
 		padding-left: 7rem;
 		@include media("<xs") {
-			width: 100%;	
-			padding: 2rem;		
+			// width: 100%;
+			padding: 2rem;
+		}
+		@include media(">md"){
+			width: 76%;
 		}
 	}
 	.sync2__nav {
@@ -176,8 +183,10 @@
 			margin: 0;
 			background: #89898a;
 			border-radius: 100%;
-			width: 5.6rem;
-			height: 5.6rem;
+			// width: 5.6rem;
+			// height: 5.6rem;
+			width: 3.2rem;
+			height: 3.2rem;
 			display: flex;
 			justify-content: center;
 			align-items: center;

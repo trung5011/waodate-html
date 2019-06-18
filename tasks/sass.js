@@ -1,3 +1,5 @@
+const gcmq = require('gulp-group-css-media-queries');
+
 module.exports = function (gulp, $, browserSync) {
 	gulp.task('tao-sass', function () {
 		let defaultNotification = function (err) {
@@ -16,6 +18,7 @@ module.exports = function (gulp, $, browserSync) {
 			.pipe($.sass().on('error', function (err) {
 				$.util.log(err);
 			}).on('error', $.notify.onError(defaultNotification)))
+			.pipe(gcmq())
 			.pipe($.sourcemaps.write(''))
 			.pipe(gulp.dest('./dist/css'))
 			.pipe(browserSync.stream())

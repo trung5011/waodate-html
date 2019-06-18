@@ -101,6 +101,7 @@
 	});
 
 	$(document).ready(function() {
+		mainPaddingTop();
 		insertEl();
 		headerAction();
 	})
@@ -138,4 +139,20 @@
 		btnToogle.on('click', function() {
 			$('.wao-menu').slideToggle();
 		});
+	}
+
+	function mainPaddingTop() {
+		let minMedia = window.matchMedia("(min-width: 767px)").matches;
+		let headerHeightDesktop = $('header').outerHeight() + 38;
+		let headerHeightMobile = $('header').outerHeight();
+
+		if (minMedia) {
+			$('main').css({
+				'padding-top': headerHeightDesktop + 'px'
+			});
+		} else {
+			$('main').css({
+				'padding-top': headerHeightMobile + 'px'
+			});
+		}
 	}

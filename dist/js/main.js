@@ -128,6 +128,7 @@ sync2.on("click", ".owl-item", function (e) {
 });
 
 $(document).ready(function () {
+	mainPaddingTop();
 	insertEl();
 	headerAction();
 });
@@ -164,5 +165,21 @@ function headerAction() {
 	btnToogle.on('click', function () {
 		$('.wao-menu').slideToggle();
 	});
+}
+
+function mainPaddingTop() {
+	var minMedia = window.matchMedia("(min-width: 767px)").matches;
+	var headerHeightDesktop = $('header').outerHeight() + 38;
+	var headerHeightMobile = $('header').outerHeight();
+
+	if (minMedia) {
+		$('main').css({
+			'padding-top': headerHeightDesktop + 'px'
+		});
+	} else {
+		$('main').css({
+			'padding-top': headerHeightMobile + 'px'
+		});
+	}
 }
 //# sourceMappingURL=main.js.map
