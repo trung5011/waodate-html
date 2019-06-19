@@ -1,0 +1,120 @@
+extends _layout/layout
+
+block variables
+	- var title = 'Home-member';
+	- var description = 'Description for home-member page';
+	- var bodyclass = 'home-member';
+
+block body
+	include ../lib/home/sec-1/index
+	include ../lib/home/sec-2/index
+	section.featured-concepts
+		.container
+			.row
+				.col-sm-12.pd-0
+					.featured-concepts__content.bg-white
+						.featured-concepts__left
+							.featured-concepts__caption
+								h2.featured-concepts__title.h1.f-bold
+									| Concept 
+									br.d-none.d-sm-block
+									| nổi bật
+								p.featured-concepts__desc.h4
+									| Nam blandit, nisl vitae scelerisque tincidunt, dolor orci faucibus nulla, quis fringilla diam magna sed elit. Praesent consectetur, leo a mollis fermentum, lectus sem facilisis neque.
+								a.btn-featured.btn.btn-primary.f-bold.text-uppercase.h4(href="#") Trở nên nổi bật
+						.featured-concepts__right
+							#sync2.owl-carousel.owl-theme
+								-var sliderNav = 0;
+								while sliderNav < 8
+									-sliderNav++;
+									.sync2__nav
+										img(src="./img/nav-01.png", alt="")
+										.sync2__name
+											span Dollie Reid
+							#sync1.owl-carousel.owl-theme
+								-var slider = 0;
+								while slider < 8
+									-slider++;
+									include ../lib/concept-item/index
+	include ../lib/banner-middle/index
+	section.home-users.issearch
+		.container-smaller
+			.row
+				.col-md-4
+					.sidebar-left.d-none.d-sm-block
+						include ../lib/home-form-member/index
+						include ../lib/slidebar-left/index
+				.col-md-8
+					.lists-user
+						.lists-user__title
+							label bạn Có thể thích
+						#friend-boy.tab-pane.fade.in.active.show
+							.lists-user-item
+								- var n = 0;
+								while n < 7
+									-n++;
+									include ../lib/user-item/index
+								a.btn-list-all(href="#") Xem tất cả
+									
+	section.banner-midde.mt-30.d-none.d-sm-block
+		.container
+			.row
+				.banner-midde__content
+					.banner-top_img
+						img.img-fluid(src="./img/banner-midde-02.png", alt="")
+					.banner-midde__caption.caption-center
+						h2.banner-midde__title.h1.color-white
+							| Khám phá các câu chuyện, bí kiếp yêu
+	section.blog-home
+		.container
+			.row
+				.col-md-6.pl-0
+					.post-group
+						.post-group__header
+							h2 Bí kíp hẹn hò
+							a.btn-bo-border Xem tất cả											
+						.list-blog-item.row
+							-var a = 0;
+							while a < 4
+								-a++;
+								.col-lg-6.col-md-12.col-sm-6.mb-40
+									.blog-item.card
+										.card-thumbnails
+											img.img-fluid(src="./img/blog-01.png" alt="Card image cap")
+										.card-body
+											h5.card-title.h4.f-bold Card title
+											.card-middle.mb-15
+												span.card-date.mr-30
+													i.icon-clock.wd-icon
+													| 01/04/2019
+												span.card-view
+													i.icon-view.wd-icon
+													| 7k view	
+											p.card-desc
+												| This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+				.col-md-6.pr-0
+					.post-group
+						.post-group__header
+							h2 Bí kíp hẹn hò
+							a.btn-bo-border Xem tất cả											
+						.list-blog-item.row
+							-var b = 0;
+							while b < 4
+								-b++;
+								.col-lg-6.col-md-12.col-sm-6.mb-40
+									.blog-item.card
+										.card-thumbnails
+											img.img-fluid(src="./img/blog-01.png" alt="Card image cap")
+										.card-body
+											h5.card-title.h4.f-bold Card title
+											.card-middle.mb-15
+												span.card-date.mr-30
+													i.icon-clock.wd-icon
+													| 01/04/2019
+												span.card-view
+													i.icon-view.wd-icon
+													| 7k view	
+											p.card-desc
+												| This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+	include ../lib/home/sec-2/index
+		
