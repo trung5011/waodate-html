@@ -1,0 +1,26 @@
+.blog-item{
+	border:none;
+	margin-bottom: 2rem;
+	.card-body{
+		padding:0;
+		padding-top: .8rem;
+	}
+	p {
+		margin-bottom: 0;
+		font-size: 1.4rem;
+		color: #081526;
+	}
+	.card-date {
+		font-size: 1.2rem;
+		// color: #ececec;
+	}
+	.card-title {
+		font-size: 1.4rem;
+		line-height: 1.43;
+		margin-bottom: .5rem;
+		// margin-top: .8rem;
+	}
+	.card-middle {
+		margin-bottom: 1.2rem;
+	}
+}

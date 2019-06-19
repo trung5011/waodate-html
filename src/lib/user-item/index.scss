@@ -1,0 +1,27 @@
+.user-item{
+	@include media("<xs") {
+		position: relative;
+		padding-bottom: 1.5rem;
+		padding-top: 7rem;
+		&__thumbnail{
+			margin: 0 auto;
+		}
+		&__concept{
+			flex-wrap: wrap;
+		}
+	}
+	&__left, &__right {
+		@media (max-width: 559px) {
+			width: 100%;
+		}
+	}
+	&__info {
+		flex-wrap: wrap;
+	}
+	&__connect {
+		@media (max-width: 404px) {
+			margin-left: rem(54px);
+			margin-top: .5rem;
+		}
+	}
+}

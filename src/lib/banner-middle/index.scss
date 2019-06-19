@@ -1,0 +1,50 @@
+.banner-midde{
+	&__content{
+		position: relative;
+	}
+	&__caption{
+		position: absolute;
+		text-align: center;
+		width: 100%;
+		@media (max-width: 1199.98px) {
+			top: 50%;
+			transform: translateY(-50%)
+		}
+		@media (min-width: 1200px) {
+			top: 13rem;
+		}
+		h2{
+			font-weight: bold;
+			font-size: 2rem;
+			@media (min-width: 992px) {
+				font-size: 4rem;
+			}
+			@media (max-width: 400px) {
+				font-size: 1.5rem;
+			}
+		}
+		
+	}
+	.caption-center{
+		top: 50%;
+		transform: translateY(-50%);
+	}
+
+	.banner-top_img {
+		// border-radius: 8px;
+		img {
+			border-radius: 8px;
+			@media (min-width: 992px) {
+				height: rem(280px);
+				object-fit: cover;
+			}
+		}
+	}
+}
+
+
+.banner-top {
+	&__top {
+		border-radius: 8px;
+	}
+}

@@ -149,9 +149,12 @@ function insertEl() {
 	var minMedia = window.matchMedia("(max-width: 767px)").matches;
 	var headerLogo = $('.wao-topbar .wao-topbar__logo');
 	var topbarLeft = $('.wao-topbar .wao-topbar__left');
+	var topbarRight = $('.wao-topbar .wao-topbar__right');
+	var waoNav = $('.wao-header .wao-menu');
 
 	if (minMedia) {
 		headerLogo.appendTo(topbarLeft);
+		topbarRight.appendTo(waoNav);
 	}
 }
 
@@ -169,16 +172,18 @@ function headerAction() {
 
 function mainPaddingTop() {
 	var minMedia = window.matchMedia("(min-width: 767px)").matches;
-	var headerHeightDesktop = $('header').outerHeight() + 38;
-	var headerHeightMobile = $('header').outerHeight();
+	var maxMedia = window.matchMedia("(max-width: 766.68px)").matches;
 
 	if (minMedia) {
+		var headerHeightDesktop = $('header').outerHeight() + 24;
 		$('main').css({
 			'padding-top': headerHeightDesktop + 'px'
 		});
-	} else {
+	} else if (maxMedia) {
+		var headerHeightMobile = $('header').outerHeight();
 		$('main').css({
-			'padding-top': headerHeightMobile + 'px'
+			// 'padding-top': headerHeightMobile + 'px'
+			'padding-top': 70 + 'px'
 		});
 	}
 }
