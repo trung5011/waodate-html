@@ -1,0 +1,16 @@
+.blog-read__others.br-8
+	h2 Bài viết liên quan
+	.blog-read__lists
+		- for(var x = 1; x < 5; x++)
+			.blog-read__item
+				a(href="#")
+					.blog-read__img
+						img.w-100(src="./img/blog-other.jpg", alt="")
+					h4 Fusce id nulla id dui fringilla vestibulum ut sit amet velit
+					.blog-read__view
+						span
+							i.fa.fa-clock-o
+							| 01/04/2019
+						span
+							i.fa.fa-eye
+							| 26k
