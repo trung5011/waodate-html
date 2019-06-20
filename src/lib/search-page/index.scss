@@ -1,0 +1,49 @@
+.search-page {
+	.banner-ads {
+		padding-top: 0;
+	}
+}
+
+.search-content {
+	&__warpper {
+		background-color: #ffffff;
+		&:not(:last-child){
+			margin-bottom: 2.4rem;
+		}
+	}
+	&__title {
+		padding: 2rem;
+		border-bottom: 1px solid #c3c6cb;
+		h3 {
+			font-size: 2rem;
+			line-height: 1.2;
+			font-weight: 700;
+			margin-bottom: 0;
+		}
+	}
+	&__news {
+		padding: 0 2rem;
+		.user-item {
+			padding-top: 2rem;
+			padding-bottom: 2rem;
+		}
+	}
+	&__seeMore {
+		padding: 2rem;
+		a {
+			border: solid 1px #081526;
+			display: block;
+			height: 4.4rem;
+			color: #081526;
+			transition: all .4s ease-in-out;
+			text-align: center;
+			font-size: 1.4rem;
+			line-height: 4.4rem;
+			&:hover {
+				color: #ffffff;
+				background-color: #ff6060;
+				border-color: #ff6060;
+			}
+		}
+	}
+}

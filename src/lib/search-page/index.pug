@@ -1,0 +1,31 @@
+section.search-content.pb-24
+	.container-smaller.container
+		.row
+			.col-lg-4
+				include ./search-filter/index
+				include ../slidebar-left/no-fb
+			.col-lg-8
+				.search-content__warpper.search-content__concept.br-8
+					.search-content__title
+						h3 Chủ Đề Hẹn Hò
+					.search-content__news
+						- for(var x = 1; x < 6; x++)
+							include ../user-item/index
+					.search-content__seeMore
+						a(href="") Xem tất cả
+				.search-content__warpper.search-content__users.br-8
+					.search-content__title
+						h3 Người Dùng
+					.search-content__news
+						- for(var x = 1; x < 6; x++)
+							include ./nguoi-dung/index
+					.search-content__seeMore
+						a(href="") Xem tất cả
+				.search-content__warpper.search-content__articles.br-8
+					.search-content__title
+						h3 Bài viết
+					.search-content__news
+						- for(var x = 1; x < 6; x++)
+							include ./bai-viet/index
+					.search-content__seeMore
+						a(href="") Xem tất cả

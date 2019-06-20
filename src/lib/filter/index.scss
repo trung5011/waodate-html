@@ -12,6 +12,36 @@
 
 
 .sidebar-filter{
+	.block-header {
+		padding: 2.4rem;
+		border-bottom: 1px solid #c3c6cb;
+		h3 {
+			font-size: 1.6rem;
+			margin-bottom: 0;
+			position: relative;
+			line-height: 1.5;
+			text-transform: uppercase;
+			font-weight: 700;
+			&::before {
+				content: '\f077';
+				font-family: 'FontAwesome';
+				font-size: 1.5rem;
+				color: #081526;
+				position: absolute;
+				top: 50%;
+				right: 24px;
+				transform: translateY(-50%);
+				transition: transform .4s ease-in-out
+			}
+		}
+		&.active {
+			h3 {
+				&:before {
+					transform: translateY(-50%) rotate(180deg)
+				}
+			}
+		}
+	}
 	.block-search{
 		height: rem(60px);
 		margin-top: rem(-60px);
@@ -53,6 +83,14 @@
 	}
 	.block-filter{
 		padding: 2rem;
+		.form-fillter {
+			.form-groups {
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+			
+		}
 		.form-control {
 			border-radius: 4px;
 			padding: 1.2rem;
@@ -107,6 +145,44 @@
 			color:  $color-1st;
 			text-decoration: underline;
 			cursor: pointer;
+		}
+		.form-check {
+			padding-left: 0;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			label {
+				margin-bottom: 0;
+			}
+			input[type="checkbox"] {
+				-webkit-appearance: none;
+				-moz-appearance: none;
+				width: 3.5rem;
+				height: 2rem;
+				background-color: #adafb2;
+				cursor: pointer;
+				border-radius: 30px;
+				position: relative;
+				transition: background-color .3s ease-in-out;
+				&:before {
+					content: '';
+					width: 1.6rem;
+					height: 1.6rem;
+					position: absolute;
+					background-color: #fff;
+					border-radius: 50%;
+					left: 2px;
+					top: 50%;
+					transform: translateY(-50%);
+					transition: left .3s ease-in-out;
+				}
+				&:checked, &.checked {
+					background-color: #ff6060;
+					&:before {
+						left: 17px;
+					}
+				}
+			}
 		}
 	}
 }

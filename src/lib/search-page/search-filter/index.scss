@@ -1,0 +1,26 @@
+.search-content {
+	margin-top: 2.4rem;
+	.sidebar-filter {
+		background-color: #ececec
+	}
+	.block-filter {
+		border-bottom: 1px solid #c3c6cb;
+	}
+	.sidebar-filter__submit  {
+		padding: 2.4rem;
+		button {
+			border: none;
+			height: 4.4rem;
+			width: 100%;
+			background-color: #ff6060;
+			font-size: 1.4rem;
+			color: #fff;
+			text-align: center;
+		}
+	}
+	.sidebar-filter__body-article {
+		.block-filter {
+			display: none;
+		}
+	}
+}

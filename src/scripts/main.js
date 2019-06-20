@@ -104,6 +104,7 @@
 		mainPaddingTop();
 		insertEl();
 		headerAction();
+		searchPage();
 	})
 
 	$(window).on('resize', function(){
@@ -163,4 +164,19 @@
 				'padding-top': 70 + 'px'
 			});
 		}
+	}
+
+	function searchPage() {
+		let searchBtn = $('.search-nav .search-nav__toggle');
+		let searchMenu = $('.search-nav .search-nav__menu ul');
+		let searchHeaderFilter = $('.sidebar-filter .block-header')
+
+		searchBtn.on('click', function() {
+			searchMenu.slideToggle();
+		});
+
+		searchHeaderFilter.on('click', function() {
+			$(this).toggleClass('active').parent().find('.block-filter').slideToggle()
+		})
+
 	}

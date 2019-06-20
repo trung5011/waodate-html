@@ -6,6 +6,7 @@ module.exports = function (gulp, $, browserSync) {
 				'bower_components/bootstrap/dist/css/bootstrap.min.css',
 				'bower_components/OwlCarousel/dist/assets/owl.carousel.min.css',
 				'bower_components/OwlCarousel/dist/assets/owl.theme.default.min.css',
+				'src/resource/css/style.css'
 
 			])
 			.pipe($.concat('thuvien.css'))

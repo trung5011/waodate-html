@@ -1,0 +1,12 @@
+extends _layout/layout
+
+block variables
+	- var title = 'search';
+	- var description = 'Description for search page';
+	- var bodyclass = 'search';
+
+block body
+	include ../lib/home/sec-2/index
+	include ../lib/search-page/search-nav/index
+	include ../lib/search-page/index
+	include ../lib/home/sec-2/index

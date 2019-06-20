@@ -131,6 +131,7 @@ $(document).ready(function () {
 	mainPaddingTop();
 	insertEl();
 	headerAction();
+	searchPage();
 });
 
 $(window).on('resize', function () {
@@ -186,5 +187,19 @@ function mainPaddingTop() {
 			'padding-top': 70 + 'px'
 		});
 	}
+}
+
+function searchPage() {
+	var searchBtn = $('.search-nav .search-nav__toggle');
+	var searchMenu = $('.search-nav .search-nav__menu ul');
+	var searchHeaderFilter = $('.sidebar-filter .block-header');
+
+	searchBtn.on('click', function () {
+		searchMenu.slideToggle();
+	});
+
+	searchHeaderFilter.on('click', function () {
+		$(this).toggleClass('active').parent().find('.block-filter').slideToggle();
+	});
 }
 //# sourceMappingURL=main.js.map
