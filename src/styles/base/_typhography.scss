@@ -246,8 +246,10 @@ ul{
 
 
 .br-8 {
-	border-radius: 8px;
-	overflow: hidden;
+	@media (min-width: 992px) {
+		border-radius: 8px;
+		overflow: hidden;
+	}
 }
 
 .gradient-black {
@@ -282,4 +284,12 @@ ul{
 
 .pb-24 {
 	padding-bottom: 2.4rem;
+}
+
+.wao-banner__img {
+	width: 100%;
+	@media (min-width: 992px) {
+		height: 32rem;
+		object-fit: cover;
+	}
 }

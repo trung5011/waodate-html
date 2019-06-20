@@ -1,0 +1,55 @@
+.concept-content {
+	.user-item {
+		padding: 2rem 0
+	}
+	.sidebar-filter {
+		background-color: #f2f3f4
+	}
+	.btn-submit {
+		height: 4.4rem;
+		text-align: center;
+		width: 100%;
+		font-weight: 700;
+	}
+	.block-filter {
+		padding: 2.4rem;
+	}
+	.block-header {
+		h3 {
+			font-size: 1.6rem;
+			border-bottom: 1px solid #c3c6cb;
+			margin-bottom: 0;
+			padding: 2.4rem;
+			position: relative;
+			line-height: 1.5;
+			text-transform: uppercase;
+			font-weight: 700;
+			&::before {
+				content: '\f077';
+				font-family: 'FontAwesome';
+				font-size: 1.5rem;
+				color: #081526;
+				position: absolute;
+				top: 50%;
+				right: 24px;
+				transform: translateY(-50%)
+			}
+		}
+	}
+	&__wrapper {
+		background-color: #fff;
+	}
+	&__users{
+		padding: 0 2rem;
+	}
+	&__title {
+		padding: 2rem;
+		border-bottom: 1px solid #c3c6cb;
+		h3 {
+			font-size: 2rem;
+			line-height: 1.2;
+			font-weight: 700;
+			margin-bottom: 0;
+		}
+	}
+}

@@ -13,8 +13,16 @@
 					img(src="./img/nav-01.png", alt="")
 				.user-item__default.pl-10
 					.user-item__top.user-item__top--active
-						h3.user-item__name.h4.pr-10 Sơn
-						span.user-item__age.h4 16t
+						.user-item__top-info
+							h3.user-item__name.pr-10 Sơn
+							span.user-item__age 16t
+						.user-item__connect
+							a(href="#").user-item__like
+								i.wd-icon.icon-normal
+							a(href="#").user-item__message
+								i.wd-icon.icon-chat
+							a(href="#").user-item__message
+								i.wd-icon.fa.fa-ellipsis-h
 					.user-item__bottom.color-text-2
 						a(href="#").user-item__view.mr-20
 							i.wd-icon.icon-view
@@ -25,13 +33,7 @@
 						a(href="#").user-item__location.mr-20
 							i.wd-icon.icon-map-pin
 							| TP.HCM
-			.user-item__connect
-				a(href="#").user-item__like
-					i.wd-icon.icon-normal
-				a(href="#").user-item__message
-					i.wd-icon.icon-chat
-				a(href="#").user-item__message
-					i.wd-icon.fa.fa-ellipsis-h
+			
 		.user-item__concept.pt-12
 			.user-concept__left
 				.user-concept__title

@@ -9,8 +9,14 @@
 					img(src="./img/nav-01.png", alt="")
 				.concept-item__default.pl-10
 					.concept-item__top.concept-item__top--active
-						h3.concept-item__name.h4.pr-10 Sơn
-						span.concept-item__age.h4 16t
+						.concept-item__top-info
+							h3.concept-item__name.h4.pr-10 Sơn
+							span.concept-item__age.h4 16t
+						.concept-item__connect
+							a(href="#").concept-item__like
+								i.wd-icon.fa.fa-heart-o
+							a(href="#").concept-item__message
+								i.wd-icon.icon-chat
 					.concept-item__bottom.color-text-2
 						a(href="#").small.concept-item__view.mr-20
 							i.wd-icon.icon-view
@@ -21,11 +27,7 @@
 						a(href="#").small.concept-item__location.mr-20
 							i.wd-icon.icon-map-pin
 							| TP.HCM	
-			.concept-item__connect
-				a(href="#").concept-item__like
-					i.wd-icon.fa.fa-heart-o
-				a(href="#").concept-item__message
-					i.wd-icon.icon-chat
+			
 		.concept__title.pt-20
 			h3.f-bold Fusce id nulla id dui fringilla vestibulum ut sit amet velit
 		.concept-item__content

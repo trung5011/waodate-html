@@ -1,0 +1,16 @@
+section.concept-content.br-8
+	.container-smaller.container
+		.row
+			.col-lg-4
+				include ../../concept-filter/index
+				include ../../slidebar-left/no-fb
+			.col-lg-8
+				.concept-content__wrapper.br-8
+					.concept-content__title
+						h3 Chủ Đề Hẹn Hò
+					.concept-content__users
+						- for(var x = 1; x < 6; x++)
+							include ../../user-item/index
+		.row
+			.col-12
+				include ../../pagination/index

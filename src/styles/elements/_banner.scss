@@ -32,7 +32,11 @@
 	&__content{
 		padding: 2.9rem 0;
 		background-color: #f2f3f4;
-		border-radius:8px;
+		// border-radius:8px;
+		@media (min-width: 992px) {
+			border-radius: 8px;
+			overflow: hidden;
+		}
 	}
 }
 

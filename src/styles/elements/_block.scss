@@ -51,17 +51,55 @@
 	}
 	&__info-left{
 		display: flex;
+		align-items: center;
+		width: 100%;
 	}
 	&__avatar{
-		width: 4.4rem;
+		// width: 4.4rem;
+		width: 20%;
+	}
+	&__default {
+		width: 80%;
+	}
+	&__bottom {
+		// display: flex;
+		a {
+			font-size: 1.2rem;
+			// display: flex;
+			// align-items: baseline;
+			i {
+				font-size: 1.6rem;
+				margin-right: .4rem;
+			}
+		}
 	}
 	&__top{
 		display: flex;
+		justify-content: space-between;
+		width: 100%;
+		h3 {
+			display: inline-block;
+			font-size: 1.4rem;
+			line-height: 1.43;
+			font-weight: 700;
+			margin-bottom: 0;
+		}
+		span {
+			font-size: 1.4rem;
+			font-weight: 400;
+		}
+		&-info {
+			margin-bottom: .5rem;
+		}
 	}
 	&__connect{
 		display: flex;
 		a{
-			display: flex;
+			display: inline-block;
+			&:not(:last-child) {
+
+				margin-right: 1.6rem;
+			}
 		}
 		.wd-icon{
 			font-size: 2rem;
