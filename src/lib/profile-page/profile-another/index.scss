@@ -1,6 +1,10 @@
 .profile-footer__another {
 	background-color: #ffffff;
 	padding: 0 2rem;
+	@media (min-width: 992px) {
+		border-bottom-left-radius: 8px;
+		border-bottom-right-radius: 8px;
+	}
 	.user-item {
 		padding: 2.4rem 0;
 		&__left {
