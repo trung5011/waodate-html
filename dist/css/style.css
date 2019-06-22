@@ -1030,14 +1030,9 @@ ul {
   margin-bottom: 2.4rem;
 }
 
-.home-users .lists-user {
-  margin-top: -6rem;
-}
-
 .home-users .lists-user__title {
   height: 6rem;
   background-color: white;
-  border-top-right-radius: .8rem;
   padding: 2rem;
   border-bottom: 1px solid rgba(8, 21, 38, 0.2);
 }
@@ -2292,39 +2287,6 @@ html .bg--parallax {
   margin-right: 2.8rem;
 }
 
-.blog-read__tag {
-  margin-top: 2.4rem;
-  padding: 2rem;
-  padding-bottom: .8rem;
-  background-color: #fff;
-}
-
-.blog-read__tag h3 {
-  font-size: 2.4rem;
-  font-weight: 700;
-  margin-bottom: 1.5rem;
-}
-
-.blog-read__tag-list {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.blog-read__tag-list a {
-  display: inline-block;
-  padding: .4rem 1.2rem;
-  border: 1px solid #081526;
-  margin-right: 1.2rem;
-  margin-bottom: 1.2rem;
-  transition: all .4s ease-in-out;
-}
-
-.blog-read__tag-list a:hover {
-  color: #fff;
-  background-color: #ff6060;
-  border-color: #ff6060;
-}
-
 .blog-item {
   border: none;
   margin-bottom: 2rem;
@@ -2400,6 +2362,39 @@ html .bg--parallax {
 
 .blog-read__footer a:hover {
   color: #ff6060;
+}
+
+.blog-read__tag {
+  margin-top: 2.4rem;
+  padding: 2rem;
+  padding-bottom: .8rem;
+  background-color: #fff;
+}
+
+.blog-read__tag h3 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.blog-read__tag-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.blog-read__tag-list a {
+  display: inline-block;
+  padding: .4rem 1.2rem;
+  border: 1px solid #081526;
+  margin-right: 1.2rem;
+  margin-bottom: 1.2rem;
+  transition: all .4s ease-in-out;
+}
+
+.blog-read__tag-list a:hover {
+  color: #fff;
+  background-color: #ff6060;
+  border-color: #ff6060;
 }
 
 .concept-item {
@@ -2527,7 +2522,6 @@ html .bg--parallax {
 
 .issearch .sidebar-filter {
   background: #f2f3f4;
-  margin-right: -3.2rem;
   border-top-left-radius: .8rem;
 }
 
@@ -2569,21 +2563,18 @@ html .bg--parallax {
 
 .sidebar-filter .block-search {
   height: 6rem;
-  margin-top: -6rem;
 }
 
 .sidebar-filter .block-search .form-search {
   display: flex;
   height: 100%;
   justify-content: center;
-  border-top-left-radius: 8px;
   overflow: hidden;
 }
 
 .sidebar-filter .block-search .form-search input {
   background-color: white;
   border: none;
-  border-radius: 1px;
   color: rgba(8, 21, 38, 0.5);
   margin-right: 1px;
   width: 100%;
@@ -2805,6 +2796,16 @@ html .bg--parallax {
   border-color: #ff6060;
 }
 
+.sidebar-banner-ads {
+  padding: 1.3rem;
+  border-radius: 8px;
+  background-color: #f2f3f4;
+}
+
+.widget {
+  margin-top: 2.4rem;
+}
+
 .user-item__info {
   flex-wrap: wrap;
 }
@@ -2852,16 +2853,6 @@ html .bg--parallax {
   height: 3.6rem;
   line-height: 2.9rem;
   margin-bottom: .8rem;
-}
-
-.sidebar-banner-ads {
-  padding: 1.3rem;
-  border-radius: 8px;
-  background-color: #f2f3f4;
-}
-
-.widget {
-  margin-top: 2.4rem;
 }
 
 .concept__banner .container {
@@ -3197,6 +3188,35 @@ html .bg--parallax {
   background-color: inherit;
 }
 
+.profile-concept-main .col-lg-4 {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-concept-main .sidebar-filter {
+  background-color: #f2f3f4;
+  border-top-left-radius: 8px;
+}
+
+.profile-concept-main .sidebar-filter .btn-submit {
+  height: 4.4rem;
+  text-align: center;
+  width: 100%;
+  font-weight: 700;
+}
+
+.profile-concept-main .profile-article {
+  border-top-left-radius: 0;
+}
+
+.profile-concept-main .profile-article__header h3 {
+  padding: 1.8rem;
+}
+
+.profile-concept-main .wao-pagination {
+  margin-top: 2.4rem;
+}
+
 .profile-footer__title {
   background-color: #fff;
   padding: 2rem;
@@ -3292,6 +3312,49 @@ html .bg--parallax {
   padding: .3rem;
   flex: 0 0 33.3333333333%;
   max-width: 33.3333333333%;
+}
+
+.profile-nav {
+  margin-bottom: 2.4rem;
+}
+
+.profile-nav nav {
+  background-color: #ffffff;
+}
+
+.profile-nav__toggle {
+  display: none;
+}
+
+.profile-nav__list {
+  display: flex;
+  margin-bottom: 0;
+}
+
+.profile-nav__link {
+  display: inline-block;
+  padding: 2rem 0;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  font-weight: 700;
+  color: #081526;
+  position: relative;
+}
+
+.profile-nav__link:before {
+  content: '';
+  width: 0;
+  height: .8rem;
+  background-color: #ff6060;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: width .4s ease-in-out;
+}
+
+.profile-nav__link:hover::before,
+.profile-nav__link--active::before {
+  width: 100%;
 }
 
 .profile-footer__users {
@@ -3681,6 +3744,41 @@ html .bg--parallax {
     flex: 0 0 70%;
     max-width: 70%;
   }
+
+  .profile-nav__item {
+    text-align: center;
+    flex: 0 0 33.3333333333%;
+    max-width: 33.3333333333%;
+  }
+
+  .profile-nav__item:not(:last-child) {
+    box-shadow: inset -1px 0 0 0 #f2f3f4;
+  }
+}
+
+@media (min-width: 768px) {
+  .home-users .lists-user__title {
+    border-top-right-radius: .8rem;
+  }
+
+  .issearch .sidebar-filter {
+    margin-right: -3.2rem;
+  }
+
+  .sidebar-filter .block-search .form-search {
+    border-top-left-radius: 8px;
+  }
+
+  .article-item__left {
+    flex: 0 0 45%;
+    max-width: 45%;
+  }
+
+  .article-item__right {
+    padding-left: 1.2rem;
+    flex: 0 0 55%;
+    max-width: 55%;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -3699,19 +3797,6 @@ html .bg--parallax {
 
   .wao-menu__item {
     margin-right: 2rem;
-  }
-}
-
-@media (min-width: 768px) {
-  .article-item__left {
-    flex: 0 0 45%;
-    max-width: 45%;
-  }
-
-  .article-item__right {
-    padding-left: 1.2rem;
-    flex: 0 0 55%;
-    max-width: 55%;
   }
 }
 
@@ -3742,6 +3827,14 @@ html .bg--parallax {
     overflow: hidden;
   }
 
+  .home-users .block-search {
+    margin-top: -6rem;
+  }
+
+  .home-users .lists-user {
+    margin-top: -6rem;
+  }
+
   .home-users .lists-user .nav-tabs {
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
@@ -3766,15 +3859,6 @@ html .bg--parallax {
     object-fit: cover;
   }
 
-  .blog-read__tag {
-    padding: 4.4rem;
-    padding-bottom: 3.2rem;
-  }
-
-  .blog-read__tag h3 {
-    margin-bottom: 2.4rem;
-  }
-
   .blog-read__content p {
     font-size: 1.8rem;
   }
@@ -3793,6 +3877,15 @@ html .bg--parallax {
   .blog-read__footer {
     padding-top: 2.4rem;
     padding-bottom: 2.4rem;
+  }
+
+  .blog-read__tag {
+    padding: 4.4rem;
+    padding-bottom: 3.2rem;
+  }
+
+  .blog-read__tag h3 {
+    margin-bottom: 2.4rem;
   }
 
   .concept-item {
@@ -3852,6 +3945,10 @@ html .bg--parallax {
   .profile-article__img img {
     height: 20rem;
     object-fit: cover;
+  }
+
+  .profile-concept-main .sidebar-filter {
+    margin-right: -3.2rem;
   }
 
   .profile-footer__title {
@@ -3996,6 +4093,12 @@ html .bg--parallax {
   }
 }
 
+@media (max-width: 992.98px) {
+  .home-users {
+    padding-top: 2.4rem;
+  }
+}
+
 @media (max-width: 991.98px) {
   .blog-read__others {
     margin-top: 3rem;
@@ -4014,6 +4117,11 @@ html .bg--parallax {
   }
 
   .profile-article {
+    margin-top: 2.4rem;
+  }
+
+  .profile-concept-main .sidebar-filter {
+    order: 1;
     margin-top: 2.4rem;
   }
 
@@ -4044,6 +4152,16 @@ html .bg--parallax {
 @media (max-width: 991px) {
   .wao-topbar__social {
     margin-right: 2.2rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .article-item {
+    flex-direction: column;
+  }
+
+  .article-item__right {
+    margin-top: 2rem;
   }
 }
 
@@ -4121,16 +4239,6 @@ html .bg--parallax {
   }
 }
 
-@media (max-width: 767.98px) {
-  .article-item {
-    flex-direction: column;
-  }
-
-  .article-item__right {
-    margin-top: 2rem;
-  }
-}
-
 @media (max-width: 690px) {
   .profile-footer__another .user-concept__connect {
     flex-direction: column;
@@ -4195,6 +4303,28 @@ html .bg--parallax {
 
   .profile-footer__another .user-item__right {
     margin-top: 2rem;
+  }
+
+  .profile-nav__toggle {
+    display: block;
+    padding: 1.5rem 1rem;
+    font-size: 1.6rem;
+    border-bottom: 1px solid #d8d8d8;
+  }
+
+  .profile-nav__toggle i {
+    margin-right: .8rem;
+  }
+
+  .profile-nav__list {
+    flex-direction: column;
+    display: none;
+  }
+
+  .profile-nav__link {
+    display: block;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 
@@ -4311,10 +4441,6 @@ html .bg--parallax {
 
   .home-users .lists-user {
     margin-top: 0;
-  }
-
-  .blog-home {
-    padding-top: 0;
   }
 
   .blog-home .col-md-6 {

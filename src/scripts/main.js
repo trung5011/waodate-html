@@ -106,6 +106,7 @@
 		headerAction();
 		searchPage();
 		insertSearchPageFilter();
+		profilePage();
 	})
 
 	$(window).on('resize', function(){
@@ -193,5 +194,15 @@
 
 		filterNavToggle.on('click', function(){
 			navMobile.toggleClass('search-content__filter-nav--active')
+		})
+	}
+
+
+	function profilePage() {
+		let toggleNav = $('.profile-nav .profile-nav__toggle');
+		let profileNav = $('.profile-nav .profile-nav__list');
+
+		toggleNav.on('click', function() {
+			profileNav.slideToggle();
 		})
 	}

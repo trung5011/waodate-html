@@ -1,0 +1,66 @@
+.profile-nav {
+	margin-bottom: 2.4rem;
+	nav {
+		background-color: #ffffff;
+	}
+	&__toggle {
+		display: none;
+		@media (max-width: 600px) {
+			display: block;
+			padding: 1.5rem 1rem;
+			font-size: 1.6rem;
+			border-bottom: 1px solid #d8d8d8;
+			i {
+				margin-right: .8rem;
+			}
+		}
+	}
+	&__list {
+		display: flex;
+		margin-bottom: 0;
+		@media (max-width: 600px) {
+			flex-direction: column;
+			display: none;
+		}
+	}
+	&__item {
+		@media (min-width: 601px) {
+			text-align: center;
+			flex: 0 0 33.3333333333%;
+			max-width: 33.3333333333%;
+			&:not(:last-child){
+				box-shadow: inset -1px 0 0 0 #f2f3f4;
+			}
+		}
+		
+	}
+	&__link {
+		display: inline-block;
+		padding: 2rem 0;
+		font-size: 1.6rem;
+		line-height: 1.5;
+		font-weight: 700;
+		color: #081526;
+		position: relative;
+		@media (max-width: 600px) {
+			display: block;
+			padding-left: 1rem;
+			padding-right: 1rem;
+		}
+		&:before {
+			content: '';
+			width: 0;
+			height: .8rem;
+			background-color: #ff6060;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			transition: width .4s ease-in-out
+		}
+		&:hover, &--active {
+			&::before {
+				width: 100%;
+			}
+		}
+	}
+}

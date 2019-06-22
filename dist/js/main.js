@@ -133,6 +133,7 @@ $(document).ready(function () {
 	headerAction();
 	searchPage();
 	insertSearchPageFilter();
+	profilePage();
 });
 
 $(window).on('resize', function () {
@@ -216,6 +217,15 @@ function insertSearchPageFilter() {
 
 	filterNavToggle.on('click', function () {
 		navMobile.toggleClass('search-content__filter-nav--active');
+	});
+}
+
+function profilePage() {
+	var toggleNav = $('.profile-nav .profile-nav__toggle');
+	var profileNav = $('.profile-nav .profile-nav__list');
+
+	toggleNav.on('click', function () {
+		profileNav.slideToggle();
 	});
 }
 //# sourceMappingURL=main.js.map

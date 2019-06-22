@@ -6,3 +6,19 @@ block variables
 	- var bodyclass = 'profile-concept';
 
 block body
+	include ../lib/profile-page/profile-banner/index
+	include ../lib/profile-page/profile-top/index
+	include ../lib/profile-page/profile-nav/index
+	section.profile-concept-main
+		.container-smaller.container
+			.row
+				.col-lg-4
+					include ../lib/profile-page/profile-filter/index
+					include ../lib/slidebar-left/no-fb
+				.col-lg-8
+					include ../lib/profile-page/profile-article/video
+			.row
+				.col-12
+					include ../lib/pagination/index
+	include ../lib/home/sec-2/index
+	include ../lib/profile-page/profile-footer/index

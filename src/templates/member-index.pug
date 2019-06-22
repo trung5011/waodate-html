@@ -41,7 +41,7 @@ block body
 		.container-smaller.container
 			.row
 				.col-md-4
-					.sidebar-left.d-none.d-sm-block
+					.sidebar-left
 						include ../lib/filter/index
 						include ../lib/slidebar-left/no-fb
 				.col-md-8
@@ -59,53 +59,27 @@ block body
 	section.blog-home
 		.container
 			.row
-				.col-md-6.pl-0
-					.post-group
+				.col-md-6.pl-md-0
+					.post-group.br-8
 						.post-group__header
 							h2 Bí kíp hẹn hò
-							a.btn-bo-border Xem tất cả											
+							a.btn-bo-border Xem tất cả	
 						.list-blog-item.row
 							-var a = 0;
 							while a < 4
 								-a++;
-								.col-lg-6.col-md-12.col-sm-6.mb-40
-									.blog-item.card
-										.card-thumbnails
-											img.img-fluid(src="./img/blog-01.png" alt="Card image cap")
-										.card-body
-											h5.card-title.h4.f-bold Card title
-											.card-middle.mb-15
-												span.card-date.mr-30
-													i.icon-clock.wd-icon
-													| 01/04/2019
-												span.card-view
-													i.icon-view.wd-icon
-													| 7k view	
-											p.card-desc
-												| This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-				.col-md-6.pr-0
-					.post-group
+								.col-lg-6.col-md-12.col-sm-6
+									include ../lib/blog-item/index
+				.col-md-6.pr-md-0
+					.post-group.br-8
 						.post-group__header
 							h2 Bí kíp hẹn hò
-							a.btn-bo-border Xem tất cả											
+							a.btn-bo-border Xem tất cả
 						.list-blog-item.row
 							-var b = 0;
 							while b < 4
 								-b++;
-								.col-lg-6.col-md-12.col-sm-6.mb-40
-									.blog-item.card
-										.card-thumbnails
-											img.img-fluid(src="./img/blog-01.png" alt="Card image cap")
-										.card-body
-											h5.card-title.h4.f-bold Card title
-											.card-middle.mb-15
-												span.card-date.mr-30
-													i.icon-clock.wd-icon
-													| 01/04/2019
-												span.card-view
-													i.icon-view.wd-icon
-													| 7k view	
-											p.card-desc
-												| This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+								.col-lg-6.col-md-12.col-sm-6
+									include ../lib/blog-item/index
 	include ../lib/home/sec-2/index
 		

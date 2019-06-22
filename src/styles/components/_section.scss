@@ -8,12 +8,26 @@
 		}
 	}
 }
+.home-users {
+	@media (min-width: 992px) {
+		.block-search {
+			margin-top: rem(-60px);
+		}
+	}
+	@media (max-width: 992.98px) {
+		padding-top: 2.4rem;
+	}
+}
 .home-users .lists-user{
-	margin-top: -6rem;
+	@media (min-width: 992px) {
+		margin-top: -6rem;
+	}
 	&__title{
 		height: rem(60px);
 		background-color: white;
-		border-top-right-radius: .8rem;
+		@media (min-width: 768px) {
+			border-top-right-radius: .8rem;
+		}
 		padding: 2rem;
 		border-bottom:1px solid rgba(8, 21, 38, 0.2);
 		label{
@@ -93,7 +107,7 @@
 		}
 	}
 	@include media("<xs") {
-		padding-top: 0;
+		// padding-top: 0;
 		.col-md-6{
 			padding: 0;
 		}
