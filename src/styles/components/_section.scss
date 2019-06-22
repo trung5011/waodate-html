@@ -76,15 +76,16 @@
 			border-bottom:1px solid rgba(8, 21, 38, 0.2);
 			margin-bottom: 2.4rem;
 			h2{
-				font-size: 2.4rem;
+				font-size: 2rem;
 				font-weight: 700;
-				text-transform: uppercase;
+				// text-transform: uppercase;
 				margin-bottom: 0;
 			}
 			a{
 				font-size: 1.4rem;
 				color: $color-1st;
-				text-transform: uppercase;
+				// text-transform: uppercase;
+				text-decoration: underline;
 			}
 		}
 		.card-middle{

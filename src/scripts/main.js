@@ -105,10 +105,12 @@
 		insertEl();
 		headerAction();
 		searchPage();
+		insertSearchPageFilter();
 	})
 
 	$(window).on('resize', function(){
 		insertEl();
+		insertSearchPageFilter();
 	});
 
 	$(window).on('scroll', function() {
@@ -170,7 +172,7 @@
 		let searchBtn = $('.search-nav .search-nav__toggle');
 		let searchMenu = $('.search-nav .search-nav__menu ul');
 		let searchHeaderFilter = $('.sidebar-filter .block-header')
-
+		
 		searchBtn.on('click', function() {
 			searchMenu.slideToggle();
 		});
@@ -178,5 +180,18 @@
 		searchHeaderFilter.on('click', function() {
 			$(this).toggleClass('active').parent().find('.block-filter').slideToggle()
 		})
+	}
 
+	function insertSearchPageFilter() {
+		let maxMedia = window.matchMedia("(max-width: 991.98px)").matches;
+		let navMobile = $('.search-content__filter-mobile .search-content__filter-nav');
+		let filterNav = $('.search-content .sidebar-filter');
+		let filterNavToggle = $('.search-content__filter-mobile .search-content__filter-toggle');
+		if (maxMedia) {
+			filterNav.appendTo(navMobile);
+		}
+
+		filterNavToggle.on('click', function(){
+			navMobile.toggleClass('search-content__filter-nav--active')
+		})
 	}

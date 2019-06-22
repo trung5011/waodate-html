@@ -132,10 +132,12 @@ $(document).ready(function () {
 	insertEl();
 	headerAction();
 	searchPage();
+	insertSearchPageFilter();
 });
 
 $(window).on('resize', function () {
 	insertEl();
+	insertSearchPageFilter();
 });
 
 $(window).on('scroll', function () {
@@ -200,6 +202,20 @@ function searchPage() {
 
 	searchHeaderFilter.on('click', function () {
 		$(this).toggleClass('active').parent().find('.block-filter').slideToggle();
+	});
+}
+
+function insertSearchPageFilter() {
+	var maxMedia = window.matchMedia("(max-width: 991.98px)").matches;
+	var navMobile = $('.search-content__filter-mobile .search-content__filter-nav');
+	var filterNav = $('.search-content .sidebar-filter');
+	var filterNavToggle = $('.search-content__filter-mobile .search-content__filter-toggle');
+	if (maxMedia) {
+		filterNav.appendTo(navMobile);
+	}
+
+	filterNavToggle.on('click', function () {
+		navMobile.toggleClass('search-content__filter-nav--active');
 	});
 }
 //# sourceMappingURL=main.js.map

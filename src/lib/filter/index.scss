@@ -13,8 +13,9 @@
 
 .sidebar-filter{
 	.block-header {
-		padding: 2.4rem;
+		padding: 2rem;
 		border-bottom: 1px solid #c3c6cb;
+		cursor: pointer;
 		h3 {
 			font-size: 1.6rem;
 			margin-bottom: 0;
@@ -22,6 +23,7 @@
 			line-height: 1.5;
 			text-transform: uppercase;
 			font-weight: 700;
+			user-select: none;
 			&::before {
 				content: '\f077';
 				font-family: 'FontAwesome';

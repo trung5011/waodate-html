@@ -59,8 +59,8 @@
 // inject:imports
 @import "../lib/banner-ad/index.scss";
 @import "../lib/banner-middle/index.scss";
-@import "../lib/blog-item/index.scss";
 @import "../lib/blog-banner/index.scss";
+@import "../lib/blog-item/index.scss";
 @import "../lib/blog-others/index.scss";
 @import "../lib/blog-read/index.scss";
 @import "../lib/blog-tag/index.scss";
@@ -72,9 +72,15 @@
 @import "../lib/slidebar-left/index.scss";
 @import "../lib/user-item/index.scss";
 @import "../lib/concept-page/c-1/index.scss";
-@import "../lib/home/sec-1/index.scss";
 @import "../lib/concept-page/c-2/index.scss";
+@import "../lib/home/sec-1/index.scss";
 @import "../lib/home/sec-2/index.scss";
+@import "../lib/profile-page/profile-another/index.scss";
+@import "../lib/profile-page/profile-article/index.scss";
+@import "../lib/profile-page/profile-filter/index.scss";
+@import "../lib/profile-page/profile-info/index.scss";
+@import "../lib/profile-page/profile-nav/index.scss";
+@import "../lib/profile-page/profile-online/index.scss";
 @import "../lib/search-page/bai-viet/index.scss";
 @import "../lib/search-page/chu-de-hen-ho/index.scss";
 @import "../lib/search-page/nguoi-dung/index.scss";

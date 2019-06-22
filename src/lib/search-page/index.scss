@@ -28,6 +28,11 @@
 			padding-bottom: 2rem;
 		}
 	}
+	&__concept {
+		@media (max-width: 991.98px) {
+			margin-top: 2.4rem;
+		}
+	}
 	&__seeMore {
 		padding: 2rem;
 		a {

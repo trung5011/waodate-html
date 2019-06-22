@@ -1,7 +1,11 @@
 .search-content {
 	margin-top: 2.4rem;
 	.sidebar-filter {
-		background-color: #ececec
+		background-color: #ececec;
+		@media (max-width: 991.98px) {
+			height: 100%;
+			overflow-y: scroll;
+		}
 	}
 	.block-filter {
 		border-bottom: 1px solid #c3c6cb;
@@ -21,6 +25,39 @@
 	.sidebar-filter__body-article {
 		.block-filter {
 			display: none;
+		}
+	}
+	&__filter {
+		&-mobile {
+			display: none;
+			@media (max-width: 991.98px) {
+				display: block;
+			}
+		}
+		&-toggle {
+			font-size: 2rem;
+			width: 4rem;
+			height: 4rem;
+			line-height: 4rem;
+			text-align: center;
+			background-color: #ff6060;
+			color: #fff;
+			position: absolute;
+			top: 40%;
+			left: 100%
+		}
+		&-nav {
+			position: fixed;
+			top: 0;
+			left: -27rem;
+			height: 100%;
+			z-index: 99;
+			width: 27rem;
+			// overflow-y: auto;
+			transition: left .4s ease-in-out;
+			&--active {
+				left: 0;
+			}
 		}
 	}
 }

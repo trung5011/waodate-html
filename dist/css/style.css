@@ -1098,16 +1098,15 @@ ul {
 }
 
 .blog-home .post-group__header h2 {
-  font-size: 2.4rem;
+  font-size: 2rem;
   font-weight: 700;
-  text-transform: uppercase;
   margin-bottom: 0;
 }
 
 .blog-home .post-group__header a {
   font-size: 1.4rem;
   color: #ff6060;
-  text-transform: uppercase;
+  text-decoration: underline;
 }
 
 .blog-home .post-group .card-middle {
@@ -2162,6 +2161,30 @@ html .bg--parallax {
 
 /*6. CUSTOM*/
 
+.banner-midde__content {
+  position: relative;
+}
+
+.banner-midde__caption {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
+.banner-midde__caption h2 {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.banner-midde .caption-center {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.banner-top__top {
+  border-radius: 8px;
+}
+
 .blog-banner__container {
   position: relative;
 }
@@ -2196,30 +2219,6 @@ html .bg--parallax {
 
 .blog-banner__desc span:not(:last-child) {
   margin-right: 3rem;
-}
-
-.banner-midde__content {
-  position: relative;
-}
-
-.banner-midde__caption {
-  position: absolute;
-  text-align: center;
-  width: 100%;
-}
-
-.banner-midde__caption h2 {
-  font-weight: bold;
-  font-size: 2rem;
-}
-
-.banner-midde .caption-center {
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.banner-top__top {
-  border-radius: 8px;
 }
 
 .blog-item {
@@ -2537,8 +2536,9 @@ html .bg--parallax {
 }
 
 .sidebar-filter .block-header {
-  padding: 2.4rem;
+  padding: 2rem;
   border-bottom: 1px solid #c3c6cb;
+  cursor: pointer;
 }
 
 .sidebar-filter .block-header h3 {
@@ -2548,6 +2548,7 @@ html .bg--parallax {
   line-height: 1.5;
   text-transform: uppercase;
   font-weight: 700;
+  user-select: none;
 }
 
 .sidebar-filter .block-header h3::before {
@@ -2719,6 +2720,37 @@ html .bg--parallax {
   left: 17px;
 }
 
+.wao-pagination {
+  background-color: #fff;
+  margin-top: 1.2rem;
+}
+
+.wao-pagination__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0;
+}
+
+.wao-pagination__item {
+  width: 8.8843%;
+  height: 6.8rem;
+  line-height: 6.8rem;
+}
+
+.wao-pagination__item:not(:last-child) {
+  box-shadow: inset -1px 0 0 0 #f2f3f4;
+}
+
+.wao-pagination__link {
+  display: block;
+  font-size: 1.4rem;
+  font-weight: 700;
+  white-space: nowrap;
+  text-align: center;
+  position: relative;
+}
+
 .search-page .banner-ads {
   padding-top: 0;
 }
@@ -2781,37 +2813,6 @@ html .bg--parallax {
 
 .widget {
   margin-top: 2.4rem;
-}
-
-.wao-pagination {
-  background-color: #fff;
-  margin-top: 1.2rem;
-}
-
-.wao-pagination__list {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 0;
-}
-
-.wao-pagination__item {
-  width: 8.8843%;
-  height: 6.8rem;
-  line-height: 6.8rem;
-}
-
-.wao-pagination__item:not(:last-child) {
-  box-shadow: inset -1px 0 0 0 #f2f3f4;
-}
-
-.wao-pagination__link {
-  display: block;
-  font-size: 1.4rem;
-  font-weight: 700;
-  white-space: nowrap;
-  text-align: center;
-  position: relative;
 }
 
 .user-item__info {
@@ -2903,7 +2904,7 @@ html .bg--parallax {
 }
 
 .concept-content .block-filter {
-  padding: 2.4rem;
+  padding: 2rem;
 }
 
 .concept-content__wrapper {
@@ -3067,6 +3068,37 @@ html .bg--parallax {
   border-color: #ff6060;
 }
 
+.search-content__users .user-concept__connect {
+  padding-top: 1.2rem;
+}
+
+.search-content__users .user-concept__connect .btn-primary {
+  height: 3.6rem;
+  line-height: 2.9rem;
+}
+
+.search-content__users .user-item__connect {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: .5rem;
+}
+
+.search-content__users .user-item__connect a {
+  height: auto;
+  margin-bottom: 0;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.search-content__users .user-concept__info li {
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+
+.search-content__users .user-concept__desc strong {
+  font-size: 1.2rem;
+}
+
 .search-content {
   margin-top: 2.4rem;
 }
@@ -3097,35 +3129,35 @@ html .bg--parallax {
   display: none;
 }
 
-.search-content__users .user-concept__connect {
-  padding-top: 1.2rem;
+.search-content__filter-mobile {
+  display: none;
 }
 
-.search-content__users .user-concept__connect .btn-primary {
-  height: 3.6rem;
-  line-height: 2.9rem;
+.search-content__filter-toggle {
+  font-size: 2rem;
+  width: 4rem;
+  height: 4rem;
+  line-height: 4rem;
+  text-align: center;
+  background-color: #ff6060;
+  color: #fff;
+  position: absolute;
+  top: 40%;
+  left: 100%;
 }
 
-.search-content__users .user-item__connect {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: .5rem;
+.search-content__filter-nav {
+  position: fixed;
+  top: 0;
+  left: -27rem;
+  height: 100%;
+  z-index: 99;
+  width: 27rem;
+  transition: left .4s ease-in-out;
 }
 
-.search-content__users .user-item__connect a {
-  height: auto;
-  margin-bottom: 0;
-  font-size: 1.4rem;
-  font-weight: 700;
-}
-
-.search-content__users .user-concept__info li {
-  flex: 0 0 25%;
-  max-width: 25%;
-}
-
-.search-content__users .user-concept__desc strong {
-  font-size: 1.2rem;
+.search-content__filter-nav--active {
+  left: 0;
 }
 
 .search-nav__banner {
@@ -3268,10 +3300,6 @@ html .bg--parallax {
     overflow: hidden;
   }
 
-  .blog-banner__content h1 {
-    font-size: 4rem;
-  }
-
   .banner-midde__caption h2 {
     font-size: 4rem;
   }
@@ -3279,6 +3307,10 @@ html .bg--parallax {
   .banner-midde .banner-top_img img {
     height: 28rem;
     object-fit: cover;
+  }
+
+  .blog-banner__content h1 {
+    font-size: 4rem;
   }
 
   .blog-read__item img {
@@ -3409,14 +3441,14 @@ html .bg--parallax {
     padding-left: 9.8rem;
   }
 
+  .banner-midde__caption {
+    top: 13rem;
+  }
+
   .blog-banner__content {
     top: auto;
     bottom: 108px;
     transform: translateX(-50%);
-  }
-
-  .banner-midde__caption {
-    top: 13rem;
   }
 
   .blog-read__content {
@@ -3495,6 +3527,19 @@ html .bg--parallax {
 
   .concept-item__right {
     margin-top: 3rem;
+  }
+
+  .search-content__concept {
+    margin-top: 2.4rem;
+  }
+
+  .search-content .sidebar-filter {
+    height: 100%;
+    overflow-y: scroll;
+  }
+
+  .search-content__filter-mobile {
+    display: block;
   }
 }
 
@@ -3823,13 +3868,6 @@ html .bg--parallax {
 
   .user-item__concept {
     flex-wrap: wrap;
-  }
-}
-
-@media (max-width: 404px) {
-  .user-item__connect {
-    margin-left: 5.4rem;
-    margin-top: .5rem;
   }
 }
 
