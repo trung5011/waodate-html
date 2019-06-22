@@ -1,0 +1,66 @@
+.profile-main {
+	.wao-pagination {
+		margin-top: 2.4rem;
+	}
+}
+.profile-info__des {
+	&-item {
+		padding: 2rem;
+		background-color: #f2f3f4;
+		&:not(:last-child){
+			margin-bottom: 2.4rem;
+		}
+		h4 {
+			font-size: 1.4rem;
+			line-height: 1.43;
+			font-weight: 700;
+			margin-bottom: 1rem;
+		}
+		p {
+			margin-bottom: 0;
+		}
+	}
+	&-btn {
+		a {
+			margin-top: 1.3rem;
+			display: block;
+			height: 3.5rem;
+			border: solid 1px #081526;
+			line-height: 3.5rem;
+			text-align: center;
+			font-size: 1.4rem;
+			color: #081526;
+			transition: all .4s ease-in-out;
+			&:hover{
+				color: #fff;
+				background-color: #ff6060;
+				border-color: #ff6060;
+			}
+		}
+	}
+	&-content {
+		margin-bottom: 2.4rem;
+		&:last-child {
+			margin-bottom: 0;
+		}
+		li {
+			margin-bottom: 2.4rem;
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+	&-gallery {
+		display: flex;
+		flex-wrap: wrap;
+		margin-top: -.3rem;
+		margin-right: -.3rem;
+		margin-left: -.3rem;
+		figure {
+			margin: 0;
+			padding: .3rem;
+			flex: 0 0 33.3333333333%;
+			max-width: 33.3333333333%
+		}
+	}
+}

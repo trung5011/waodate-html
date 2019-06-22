@@ -1,0 +1,30 @@
+.profile-footer {
+	@media (max-width: 991.98px) {
+		margin-top: 2.4rem;
+	}
+	&__title{
+		background-color: #fff;
+		padding: 2rem;
+		display: flex;
+		justify-content: space-between;
+		border-bottom: 1px solid rgba(8,21,38,.2);
+		@media (min-width: 992px) {
+			border-top-left-radius: 8px;
+			border-top-right-radius: 8px;
+		}
+		h3 {
+			font-size: 2rem;
+			font-weight: 700;
+			color: #081526;
+			line-height: 1.2;
+			margin-bottom: 0;
+		}
+		a {
+			font-size: 1.4rem;
+			font-weight: 400;
+			color: #ff6060;
+			line-height: 1.43;
+			text-decoration: underline;
+		}
+	}
+}

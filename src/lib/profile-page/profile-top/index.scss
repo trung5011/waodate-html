@@ -1,0 +1,78 @@
+.profile-top {
+	&__avatar {
+		@media (max-width: 991.98px) {
+			display: flex;
+			justify-content: center;
+			margin-bottom: 1.5rem;
+		}
+		@media (min-width: 992px) {
+			margin-top: -18.8rem;
+			img {
+				width: 100%;
+			}
+		}
+	}
+	&__info {
+		padding: 2rem;
+		background-color: #ffffff;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		@media (max-width: 440px) {
+			flex-direction: column
+		}
+		h3 {
+			font-size: 2.4rem;
+			font-weight: 700;
+			line-height: 1.33;
+			margin-bottom: 1rem;
+			span {
+				font-weight: 400;
+				display: inline-block;
+				margin-left: 2.2rem;
+			}
+		}
+		&-view {
+			@media (max-width: 440px) {
+				margin-bottom: 1rem;
+			}
+			a {
+				display: inline-block;
+				font-size: 1.2rem;
+				font-weight: 400;
+				i {
+					font-size: 1.6rem;
+					margin-right: .4rem;
+				}
+				&:not(:last-child) {
+					margin-right: 1.2rem;
+				}
+			}
+		}
+		&-right {
+			a {
+				display: inline-block;
+				font-size: 2rem;
+				&:not(:last-child){
+					margin-right: 2rem;
+				}
+			}
+		}
+		&--active {
+			h3 {
+				position: relative;
+				&::before {
+					content: '';
+					width: .8rem;
+					height: .8rem;
+					background-color: #05dfb6;
+					border-radius: 50%;
+					position: absolute;
+					top: 50%;
+					right: -25px;
+					transform: translateY(-50%)
+				}
+			}
+		}
+	}
+}

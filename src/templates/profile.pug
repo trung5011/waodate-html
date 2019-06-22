@@ -1,0 +1,25 @@
+extends _layout/layout
+
+block variables
+	- var title = 'Profile';
+	- var description = 'Description for Profile page';
+	- var bodyclass = 'profile';
+
+block body
+	include ../lib/profile-page/profile-banner/index
+	include ../lib/profile-page/profile-top/index
+	section.profile-main
+		.container-smaller.container
+			.row
+				.col-lg-4
+					include ../lib/profile-page/profile-info_des/index
+					include ../lib/slidebar-left/no-fb
+				.col-lg-8
+					include ../lib/profile-page/profile-article/news
+			.row
+				.col-12
+					include ../lib/pagination/index
+	include ../lib/home/sec-2/index
+	include ../lib/profile-page/profile-footer/index
+	include ../lib/home/sec-2/index
+	
