@@ -1,0 +1,22 @@
+.profile-detail {
+	.profile-info__des-content {
+		ul {
+			display: flex;
+			flex-wrap: wrap;
+			margin-bottom: 0;
+		}
+		li {
+			flex: 0 0 50%;
+			max-width: 50%;
+		}
+	}
+	.sidebar-left {
+		.widget {
+			@media (min-width: 992px) {
+				&:first-child {
+					margin-top: 0;
+				}
+			}
+		}
+	}
+}

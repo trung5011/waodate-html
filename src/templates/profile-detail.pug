@@ -6,3 +6,26 @@ block variables
 	- var bodyclass = 'profile-detail';
 
 block body
+	include ../lib/profile-page/profile-banner/index
+	include ../lib/profile-page/profile-top/index
+	include ../lib/profile-page/profile-nav/index
+	section.profile-detail
+		.container-smaller.container
+			.row
+				.col-lg-4
+					.profile-info__des-item.br-8
+						include ../lib/profile-page/profile-info_des/bio
+				.col-lg-4
+					.profile-info__des-item.br-8
+						include ../lib/profile-page/profile-info_des/detail
+					.profile-info__des-item.br-8
+						include ../lib/profile-page/profile-info_des/character
+					.profile-info__des-item.br-8
+						include ../lib/profile-page/profile-info_des/conception
+					.profile-info__des-item.br-8
+						include ../lib/profile-page/profile-info_des/object
+				.col-lg-4
+					include ../lib/slidebar-left/no-fb
+	include ../lib/home/sec-2/index
+	include ../lib/profile-page/profile-footer/index
+	include ../lib/home/sec-2/index
