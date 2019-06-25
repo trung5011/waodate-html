@@ -124,7 +124,7 @@
 
 
 	function insertEl() {
-		let minMedia = window.matchMedia("(max-width: 767px)").matches;
+		let minMedia = window.matchMedia("(max-width: 799.98px)").matches;
 		let headerLogo = $('.wao-topbar .wao-topbar__logo');
 		let topbarLeft = $('.wao-topbar .wao-topbar__left');
 		let topbarRight = $('.wao-topbar .wao-topbar__right');

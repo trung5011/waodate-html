@@ -1,17 +1,17 @@
 .wao-menu {
 	width: 100%;
-	@include media('<sm'){
+	@media (max-width: 799.98px) {
 		display: none;
 	}
 	ul {
 		margin-bottom: 0;
-		@media screen and (min-width: 768px){
+		@media screen and (min-width: 800px){
 			display: flex;
 			justify-content: center;
 		}
 	}
 	&__item {
-		@media screen and (min-width: 768px){
+		@media screen and (min-width: 800px){
 			margin-right: rem(20px);
 		}
 		@include media('>lg'){

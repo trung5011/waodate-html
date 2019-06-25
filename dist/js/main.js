@@ -150,7 +150,7 @@ $(window).on('scroll', function () {
 });
 
 function insertEl() {
-	var minMedia = window.matchMedia("(max-width: 767px)").matches;
+	var minMedia = window.matchMedia("(max-width: 799.98px)").matches;
 	var headerLogo = $('.wao-topbar .wao-topbar__logo');
 	var topbarLeft = $('.wao-topbar .wao-topbar__left');
 	var topbarRight = $('.wao-topbar .wao-topbar__right');
