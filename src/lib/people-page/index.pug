@@ -1,0 +1,16 @@
+section.people-main
+	.container.container-smaller
+		.row
+			.col-lg-4
+				include ./people-filter/index
+				include ../slidebar-left/no-fb
+			.col-lg-8
+				.search-content__warpper.search-content__users.br-8
+					.search-content__title
+						h3 Người Dùng
+					.search-content__news
+						- for(var x = 1; x < 6; x++)
+							include ./people-user/index
+		.row
+			.col-12
+				include ../pagination/index

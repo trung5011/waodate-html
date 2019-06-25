@@ -38,7 +38,7 @@
 		}
 	}
 	&__right{
-		padding-left: 1.6rem;
+		padding-left: 1.2rem;
 		@include media("<xs") {
 			padding-left: 0;
 		}
@@ -76,6 +76,7 @@
 	&__top{
 		display: flex;
 		justify-content: space-between;
+		align-items: center;
 		width: 100%;
 		h3 {
 			display: inline-block;
@@ -83,13 +84,14 @@
 			line-height: 1.43;
 			font-weight: 700;
 			margin-bottom: 0;
+			padding-right: .8rem;
 		}
 		span {
 			font-size: 1.4rem;
 			font-weight: 400;
 		}
 		&-info {
-			margin-bottom: .5rem;
+			// margin-bottom: .5rem;
 		}
 	}
 	&__connect{
