@@ -186,8 +186,8 @@ function headerAction() {
 }
 
 function mainPaddingTop() {
-	var minMedia = window.matchMedia("(min-width: 767px)").matches;
-	var maxMedia = window.matchMedia("(max-width: 766.68px)").matches;
+	var minMedia = window.matchMedia("(min-width: 800px)").matches;
+	var maxMedia = window.matchMedia("(max-width: 799.98px)").matches;
 
 	if (minMedia) {
 		var headerHeightDesktop = $('header').outerHeight() + 24;
@@ -198,7 +198,7 @@ function mainPaddingTop() {
 		var headerHeightMobile = $('header').outerHeight();
 		$('main').css({
 			// 'padding-top': headerHeightMobile + 'px'
-			'padding-top': 70 + 'px'
+			'padding-top': 94 + 'px'
 		});
 	}
 }

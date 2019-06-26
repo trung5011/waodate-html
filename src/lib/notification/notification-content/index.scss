@@ -1,0 +1,53 @@
+.notification-content {
+	background-color: #ffffff;
+	@media (max-width: 767.98px) {
+		margin-top: 2.4rem;
+	}
+	&__header {
+		padding: 2.4rem;
+		padding-bottom: 2rem;
+		border-bottom: 1px solid rgba(8,21,38, .2);
+		h3 {
+			font-size: 2rem;
+			font-weight: 700;
+			line-height: 1.2;
+			margin-bottom: 0;
+		}
+	}
+	&__item {
+		a {
+			display: flex;
+			align-items: center;
+			padding: 2.4rem;
+			padding-bottom: 1.9rem;
+			border-bottom: 1px solid #adb0b2;
+		}
+		img {
+			width: 7.2rem;
+			height: 7.2rem;
+			border-radius: 50%;
+			object-fit: cover;
+		}
+		&--notSeen {
+			a {
+				background-color: rgba(255,140,102,.1);
+			}
+		}
+	}
+	&__title {
+		margin-left: 1.6rem;
+		h4 {
+			margin-bottom: .6rem;
+			font-weight: 700;
+			font-size: 1.8rem;
+			span {
+				display: inline-block;
+				margin-left: .8rem;
+				font-weight: 400;
+			}
+		}
+		p {
+			margin-bottom: 0;
+		}
+	}
+}
