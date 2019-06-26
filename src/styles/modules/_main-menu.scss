@@ -3,6 +3,12 @@
 	@media (max-width: 799.98px) {
 		display: none;
 	}
+	@media (min-width: 800px) {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		transition: all .3s ease-in-out
+	}
 	ul {
 		margin-bottom: 0;
 		@media screen and (min-width: 800px){
@@ -23,7 +29,6 @@
 		font-size: rem(16px);
 		line-height: rem(24px);
 		font-weight: 700;
-		text-transform: uppercase;
 		padding: rem(12px) 0 rem(18px) 0;
 		position: relative;
 		&::before {
@@ -35,6 +40,9 @@
 			bottom: 0;
 			left: 0;
 			transition: width .4s ease-in-out;
+		}
+		@media (min-width: 992px) {
+			text-transform: uppercase;
 		}
 		&--active {
 			&::before {

@@ -19,8 +19,8 @@
 		"babel-core": "^6.26.3",
 		"babel-preset-env": "^1.7.0",
 		"browser-sync": "^2.26.7",
+		"css-declaration-sorter": "^4.0.1",
 		"foldero": "^0.1.1",
-		"gulp-autoprefixer": "^5.0.0",
 		"gulp-babel": "^7.0.1",
 		"gulp-clean": "^0.4.0",
 		"gulp-clean-css": "^3.10.0",
@@ -42,9 +42,12 @@
 		"sass": "^1.10.1"
 	},
 	"devDependencies": {
+		"autoprefixer": "^9.6.0",
 		"del": "^4.1.1",
 		"gulp": "^3.9.1",
+		"gulp-autoprefixer": "^5.0.0",
 		"gulp-group-css-media-queries": "^1.2.2",
-		"gulp-inject": "^5.0.2"
+		"gulp-inject": "^5.0.2",
+		"gulp-postcss": "^8.0.0"
 	}
 }

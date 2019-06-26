@@ -12,5 +12,14 @@
 	}
 	&--isScroll {
 		box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+		.wao-menu {
+			@media (min-width: 800px) {
+				justify-content: space-between;
+				.wao-topbar__logo--scroll {
+					display: block;
+				}
+			}
+			
+		}
 	}
 }

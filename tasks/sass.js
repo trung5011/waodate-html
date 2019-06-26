@@ -1,4 +1,7 @@
 const gcmq = require('gulp-group-css-media-queries');
+const postcss = require('gulp-postcss');
+const autoprefixer = require('autoprefixer');
+const cssDeclarationSorter = require('css-declaration-sorter');
 
 module.exports = function (gulp, $, browserSync) {
 	gulp.task('tao-sass', function () {
@@ -18,6 +21,12 @@ module.exports = function (gulp, $, browserSync) {
 			.pipe($.sass().on('error', function (err) {
 				$.util.log(err);
 			}).on('error', $.notify.onError(defaultNotification)))
+			.pipe(postcss([
+				autoprefixer({
+					cascade: false
+				}),
+				cssDeclarationSorter({order: 'smacss'}), 
+			]))
 			.pipe(gcmq())
 			.pipe($.sourcemaps.write(''))
 			.pipe(gulp.dest('./dist/css'))

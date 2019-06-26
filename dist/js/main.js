@@ -142,10 +142,21 @@ $(window).on('resize', function () {
 });
 
 $(window).on('scroll', function () {
-	if ($(window).scrollTop() > 100) {
+	var minMedia = window.matchMedia("(min-width: 800px)").matches;
+	var scrollTopDes = $(window).scrollTop() > 100;
+	var waoTopbarHeight = $('.wao-header .wao-topbar').outerHeight();
+	if (scrollTopDes) {
 		$('.wao-header').addClass('wao-header--isScroll');
+		if (minMedia) {
+			$('.wao-header .wao-topbar').css({
+				'margin-top': '-' + waoTopbarHeight + 'px'
+			});
+		}
 	} else {
 		$('.wao-header').removeClass('wao-header--isScroll');
+		$('.wao-header .wao-topbar').css({
+			'margin-top': 0
+		});
 	}
 });
 
