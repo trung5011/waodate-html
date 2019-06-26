@@ -17,6 +17,7 @@
 	}
 	&__list {
 		display: flex;
+		justify-content: space-around;
 		margin-bottom: 0;
 		@media (max-width: 600px) {
 			flex-direction: column;
@@ -26,8 +27,7 @@
 	&__item {
 		@media (min-width: 601px) {
 			text-align: center;
-			flex: 0 0 33.3333333333%;
-			max-width: 33.3333333333%;
+			width: 100%;
 			&:not(:last-child){
 				box-shadow: inset -1px 0 0 0 #f2f3f4;
 			}
