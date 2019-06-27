@@ -1,0 +1,10 @@
+extends _layout/layout
+
+block variables
+	- var title = 'Users';
+	- var description = 'Description for users page';
+	- var bodyclass = 'wao-users';
+
+block body
+	include ../lib/form/users/index
+	include ../lib/home/sec-2/index

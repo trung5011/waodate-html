@@ -1,0 +1,31 @@
+.wao-users {
+	.sidebar-banner-ads {
+		&:first-child {
+			margin-top: 0;
+		}
+	}
+}
+
+
+.wao-form {
+	&__body {
+		&-2Upload {
+			display: flex;
+			margin-right: -1.2rem;
+			margin-left: -1.2rem;
+			.wao-form__upload {
+				width: 50%;
+				@media (min-width: 768px) {
+					width: 25%;
+					&:last-child {
+						width: 75%
+					}
+				}
+			}
+			.wao-form__upload {
+				padding-right: 1.2rem;
+				padding-left: 1.2rem;
+			}
+		}
+	}
+}

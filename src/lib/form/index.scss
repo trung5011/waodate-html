@@ -1,0 +1,217 @@
+.wao-form {
+	&__row {
+		margin-bottom: 2.4rem;
+	}
+	&__header {
+		padding: 2.4rem;
+		background-color: #ffffff;
+		h3 {
+			font-size: 2rem;
+			font-weight: 700;
+			margin-bottom: 0;
+			line-height: 1.2;
+		}
+	}
+	&__body {
+		background-color: #f2f3f4;
+		&-container {
+			padding: 2.4rem 4rem 1.6rem 4rem;
+		}
+		.form-group {
+			margin-bottom: 1.6rem;
+			label {
+				font-weight: 700;
+				font-size: 1.4rem;
+			}
+			.form-control {
+				height: 4.4rem;
+				padding: 1.2rem;
+				margin-bottom: 0;
+			}
+			textarea.form-control {
+				height: 14.8rem;
+			}
+			.form-select-2 {
+				display: flex;
+				margin-right: -15px;
+				margin-left: -15px;
+				.form-select {
+					width: 100%;
+					padding-right: 1.6rem;
+					padding-left: 1.6rem;
+					&::before {
+						right: 28px;
+					}
+					@media (min-width: 768px) {
+						width: 50%;
+					}
+				}
+				&__formTo {
+					position: relative;
+					&:before {
+						display: block;
+						position: absolute;
+						top: 50%;
+						left: 50%;
+						width: 10px;
+						height: 2px;
+						transform: translate(-50%, -50%);
+						background: rgba(0, 0, 0, 0.5);
+						content: '';
+					}
+				}
+				@media (max-width: 580px) {
+					flex-direction: column;
+					.form-select {
+						&:first-child {
+							margin-bottom: 1.5rem;
+						}
+					}
+				}
+			}
+			.form-select {
+				position: relative;
+				&:before {
+					content: '\f078';
+					content: '';
+					background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTIiIGhlaWdodD0iMTIiIHZpZXdCb3g9IjAgMCAxMiAxMiI+CiAgICA8ZGVmcz4KICAgICAgICA8cGF0aCBpZD0iYSIgZD0iTTYgNi41ODZsMi4yOTMtMi4yOTNhMSAxIDAgMCAxIDEuNDE0IDEuNDE0bC0zIDNhMSAxIDAgMCAxLTEuNDE0IDBsLTMtM2ExIDEgMCAwIDEgMS40MTQtMS40MTRMNiA2LjU4NnoiLz4KICAgIDwvZGVmcz4KICAgIDx1c2UgZmlsbD0iIzA4MTUyNiIgZmlsbC1ydWxlPSJldmVub2RkIiB4bGluazpocmVmPSIjYSIvPgo8L3N2Zz4K');
+					background-position: right center;
+					background-repeat: no-repeat;
+					width: 100%;
+					height: 100%;
+					position: absolute;
+					top: 0;
+					right: 12px;
+					pointer-events: none;
+				}
+				select {
+					background-color: #f8f9f9;
+					-webkit-appearance: none;
+					-moz-appearance: none;
+					&::-ms-expand {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+	&__upload {
+		position: relative;
+		label {
+			display: block;
+			width: 100%;
+			font-size: 1.4rem;
+			font-weight: 700;
+			line-height: 1.43;
+			text-align: center;
+			background-color: #f2f3f4;
+			padding-top: 4.5rem;
+			padding-bottom: 5.1rem;
+			margin-bottom: 0;
+			span {
+				display: block;
+				margin-bottom: .4rem;
+			}
+		}
+		input[type="file"] {
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			opacity: 0;
+			top: 0;
+			left: 0;
+			cursor: pointer;
+			z-index: 1;
+		}
+	}
+	&__title {
+		padding: 2.2rem 4rem 2.3rem 4rem;
+		border-bottom: 1px solid #c3c6cb;
+		h4 {
+			font-size: 2rem;
+			font-weight: 700;
+			line-height: 1.2;
+			margin-bottom: 0;
+		}
+	}
+	&__btn {
+		display: block;
+		font-size: 1.4rem;
+		font-weight: 700;
+		text-align: center;
+		height: 5.2rem;
+		line-height: 5.2rem;
+		width: 100%;
+		background-color: inherit;
+		border: none;
+		&--ouline {
+			border: solid 1px #081526;
+			color: #081526;
+		}
+		&--danger {
+			background-color: #ff6060;
+			color: #ffffff;
+		}
+		&--disable {
+			background-color: rgba(255,96,96,.3)
+		}
+		@media (max-width: 767.98px) {
+			&:first-child {
+				margin-bottom: 1rem;
+			}
+		}
+	}
+	&__noted {
+		display: flex;
+		margin-bottom: 4rem;
+		input[type="checkbox"] {
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			display: block;
+			position: relative;
+			align-self: flex-start;
+			width: 2rem;
+			height: 2rem;
+			&:before, &:after {
+				content: '';
+				position: absolute;
+			}
+			&:after {
+				content: '\f00c';
+				font-family: 'FontAwesome';
+				font-size: 1.2rem;
+				top: 50%;
+				left: 4px;
+				transform: translateY(-50%);
+				opacity: 0;
+			}
+			&:before {
+				width: 2rem;
+				height: 2rem;
+				border-radius: 4px;
+				background-color: #ffffff;
+				top: 0;
+				left: 0;
+			}
+			&:checked {
+				&:after {
+					opacity: 1;
+				}
+			}
+		}
+		label {
+			padding-left: 1.3rem;
+			margin-bottom: 0;
+			a {
+				text-decoration: underline;
+				font-weight: 700;
+			}
+		}
+	}
+}
+
+.wao-register-main, .wao-login-main, .wao-newpassword-main, .wao-resetpassword-main {
+	.sidebar-banner-ads:first-child {
+		margin-top: 0;
+	}
+}

@@ -1,0 +1,28 @@
+section.wao-login-main
+	.container.container-smaller
+		.row
+			.col-md-8
+				form.wao-form(action="")
+					.wao-form__row.wao-form__header.br-8
+						h3 Đăng nhập
+					.wao-form__row.wao-form__body.br-8
+						.wao-form__body-container
+							.row
+								.col-12.form-group
+									label Username
+									input.form-control(type="text", name="")
+								.col-12.form-group
+									label Mật khẩu
+									input.form-control(type="text", name="")
+					.wao-form__noted
+						label(for="")
+							a(href="") Quên mật khẩu
+					.wao-form__btnGroup
+						.row
+							.col-md-6
+								button.wao-form__btn.wao-form__btn--ouline.br-8(type="submit") Hủy
+							.col-md-6
+								button.wao-form__btn.wao-form__btn--danger.wao-form__btn--disable.br-8(type="submit") Đăng nhập
+			.col-md-4
+				include ../../slidebar-left/no-fb
+
