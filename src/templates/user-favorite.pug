@@ -1,0 +1,24 @@
+extends _layout/layout
+
+block variables
+	- var title = 'User-favorite';
+	- var description = 'Description for User-favorite page';
+	- var bodyclass = 'User-favorite';
+
+block body
+	include ../lib/profile-page/profile-banner/user
+	include ../lib/profile-page/profile-top/user
+	include ../lib/profile-page/profile-nav/user
+	section.profile-like
+		.container.container-smaller
+			.row
+				.col-lg-4
+					include ../lib/profile-page/profile-like/index
+					include ../lib/slidebar-left/no-fb
+				.col-lg-8
+					.concept-content__wrapper.br-8
+						.concept-content__title
+							h3 Chủ Đề Hẹn Hò Bạn Đã Thích
+						.concept-content__users
+							- for(var x = 1; x < 6; x++)
+								include ../lib/user-item/index

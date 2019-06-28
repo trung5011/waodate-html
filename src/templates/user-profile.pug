@@ -1,0 +1,27 @@
+extends _layout/layout
+
+block variables
+	- var title = 'User-profile';
+	- var description = 'Description for User-profile page';
+	- var bodyclass = 'user-profile';
+
+block body
+	include ../lib/profile-page/profile-banner/user
+	include ../lib/profile-page/profile-top/user
+	include ../lib/profile-page/profile-nav/user
+	section.profile-detail.profile-detail--user
+		.container-smaller.container
+			.row
+				.col-lg-4
+					.profile-info__des-item.br-8
+						include ../lib/profile-page/profile-info_des/bio-user
+					.profile-info__des-item.br-8
+						include ../lib/profile-page/profile-info_des/contact-user
+				.col-lg-4
+					.profile-info__des-item.br-8
+						include ../lib/profile-page/profile-info_des/detail-user
+					.profile-info__des-item.br-8
+						include ../lib/profile-page/profile-info_des/character-user
+				.col-lg-4
+					include ../lib/slidebar-left/no-fb
+	include ../lib/home/sec-2/index

@@ -75,4 +75,19 @@
 			}
 		}
 	}
+	&--user {
+		.profile-top__avatar {
+			position: relative;
+		}
+		.wao-profile-edit {
+			left: 50%;
+			bottom: 12px;
+			transform: translateX(-50%);
+			white-space: nowrap;
+			text-align: center;
+			img {
+				margin-right: .3rem;
+			}
+		}
+	}
 }

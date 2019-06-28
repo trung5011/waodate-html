@@ -23,6 +23,9 @@
 		@include media('>lg'){
 			margin-right: rem(55px);
 		}
+		&:last-child {
+			margin-right: 0;
+		}
 	}
 	&__link {
 		display: block;

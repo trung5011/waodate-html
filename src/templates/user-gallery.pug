@@ -1,0 +1,22 @@
+extends _layout/layout
+
+block variables
+	- var title = 'Home';
+	- var description = 'Description for home page';
+	- var bodyclass = 'home';
+
+block body
+	include ../lib/profile-page/profile-banner/user
+	include ../lib/profile-page/profile-top/user
+	include ../lib/profile-page/profile-nav/user
+	section.profile-gallery.profile-gallery--user
+		.container-smaller.container
+			.row
+				.col-lg-8
+					include ../lib/profile-page/profile-gallery/user
+				.col-lg-4
+					include ../lib/slidebar-left/no-fb
+			.row
+				.col-12
+					include ../lib/pagination/index
+	include ../lib/home/sec-2/index

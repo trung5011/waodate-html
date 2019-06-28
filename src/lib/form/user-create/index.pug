@@ -1,0 +1,63 @@
+section.user-create-concept
+	.container.container-smallest
+		.row
+			.col-12
+				form.wao-form(action="")
+					.wao-form__row.wao-form__header.br-8
+						h3 Tạo concept
+					.wao-form__row.wao-form__body.br-8
+						.wao-form__title
+							h4 Thông Tin Concept
+						.wao-form__body-container
+							.row
+								.col-12.form-group
+									label Tên concept
+									input.form-control(type="text", name="")
+								.col-12.form-group
+									label Sở Thích
+									textarea.form-control(name="")
+								.col-12.form-group.wao-form__upload
+									label.br-8(for="")
+										span.fa.fa-plus-circle
+										| Hình ảnh/Video
+										br
+										| Concept
+									input(type="file", name="")
+								.col-12.form-group
+									label Địa điểm 1
+									.form-group__location
+										input.form-control(type="text", name="")
+										button.form-group__btn(type="submit")
+											svg(xmlns='http://www.w3.org/2000/svg', width='16', height='16', viewBox='0 0 16 16')
+												path(fill='#fff', fill-rule='evenodd', d='M12.243 10.728L8 14.97l-4.243-4.243a6 6 0 1 1 8.486 0zM6.586 7.899a2 2 0 1 0 2.828-2.828A2 2 0 0 0 6.586 7.9z')
+								.col-12.form-group
+									label Địa điểm 2
+									.form-group__location
+										input.form-control(type="text", name="")
+										button.form-group__btn(type="submit")
+											svg(xmlns='http://www.w3.org/2000/svg', width='16', height='16', viewBox='0 0 16 16')
+												path(fill='#fff', fill-rule='evenodd', d='M12.243 10.728L8 14.97l-4.243-4.243a6 6 0 1 1 8.486 0zM6.586 7.899a2 2 0 1 0 2.828-2.828A2 2 0 0 0 6.586 7.9z')
+								.col-12.form-group
+									label Địa điểm 3
+									.form-group__location
+										input.form-control(type="text", name="")
+										button.form-group__btn(type="submit")
+											svg(xmlns='http://www.w3.org/2000/svg', width='16', height='16', viewBox='0 0 16 16')
+												path(fill='#fff', fill-rule='evenodd', d='M12.243 10.728L8 14.97l-4.243-4.243a6 6 0 1 1 8.486 0zM6.586 7.899a2 2 0 1 0 2.828-2.828A2 2 0 0 0 6.586 7.9z')
+								.col-md-4.form-group
+									label Thời gian
+									input.form-control(type="text", name="")
+								.col-md-4.form-group
+									label Chi phí hẹn hò
+									input.form-control(type="text", name="")
+								.col-md-4.form-group
+									label Người chi trả
+									.form-select
+										select.form-control(name="")
+											option(value="")
+					.wao-form__btnGroup
+						.row
+							.col-md-6
+								button.wao-form__btn.wao-form__btn--ouline.br-8(type="submit") Hủy
+							.col-md-6
+								button.wao-form__btn.wao-form__btn--danger.wao-form__btn--disable.br-8(type="submit") Đăng

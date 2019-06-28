@@ -1,0 +1,54 @@
+.profile-like__tab.br-8
+	ul.profile-like__tab-nav.nav.nav-tabs
+		li
+			a.active.show(data-toggle="tab" href="#tab1") Bạn thích
+		li
+			a(data-toggle="tab" href="#tab2") Thích bạn
+	.profile-like__tab-content.tab-content
+		#tab1.profile-like__like.tab-pane.fade.in.active.show
+			- for(x = 1; x < 10; x++)
+				.profile-like__item
+					.profile-like__title
+						img(src="./img/nav-01.png", alt="")
+						h4
+							| Dollie Reid
+							span 26
+					.profile-like__btn
+						.profile-like__btn-heart.profile-like__btn-heart--active
+							span.fa.fa-heart-o
+		#tab2.profile-like__liked.tab-pane.fade.in.active.show
+			.profile-like__item
+				.profile-like__title
+					img(src="./img/nav-01.png", alt="")
+					h4
+						| Dollie Reid
+						span 26
+				.profile-like__btn
+					.profile-like__btn-heart.profile-like__btn-heart--active
+						span.fa.fa-heart-o
+					.profile-like__btn-delete
+						span.lnr.lnr-cross
+			.profile-like__item
+				.profile-like__title
+					img(src="./img/nav-01.png", alt="")
+					h4
+						| Dollie Reid
+						span 26
+				.profile-like__btn
+					.profile-like__btn-heart.profile-like__btn-heart--active
+						span.fa.fa-heart-o
+					.profile-like__btn-delete
+						span.lnr.lnr-cross
+			.profile-like__item
+				.profile-like__title
+					img(src="./img/nav-01.png", alt="")
+					h4
+						| Dollie Reid
+						span 26
+				.profile-like__btn
+					.profile-like__btn-heart
+						span.fa.fa-heart-o
+					.profile-like__btn-delete
+						span.lnr.lnr-cross
+
+
