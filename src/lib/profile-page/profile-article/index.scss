@@ -62,6 +62,16 @@
 			font-size: 1.2rem;
 			color: rgba(8,21,38,.5);
 		}
+		&-noted {
+			small {
+				display: block;
+				margin-top: .8rem;
+				&:first-child {
+					text-decoration: underline;
+					color: #081526;
+				}
+			}
+		}
 	}
 	&__right {
 		@media (min-width: 600px) {
@@ -153,6 +163,89 @@
 					background-color: inherit
 				}
 			}
+		}
+	}
+	&--user {
+		@media (min-width: 992px) {
+			border-top-left-radius: 8px;
+			border-bottom-left-radius: 8px;
+		}
+		.profile-article__left {
+			display: flex;
+			flex-direction: column;
+			&-noted {
+				margin-top: auto;;
+			}
+		}
+		.profile-article__header {
+			display: flex;
+			height: 6.3rem;
+			align-items: center;
+			border-bottom: 1px solid rgba(8, 21, 38, 0.2);
+		}
+		.profile-article__status, .profile-article__view, .profile-article__edit {
+			height: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		.profile-article__status {
+			padding-right: 2.3rem;
+			padding-left: 2rem;
+			justify-content: space-between;
+			width: 70%;
+			h5 {
+				margin-bottom: 0;
+				font-size: 1.4rem;
+				font-weight: 700;
+				position: relative;
+				&:before {
+					content: '';
+					width: 1.2rem;
+					height: 1.2rem;
+					border-radius: 50%;
+					display: inline-block;
+					margin-right: .8rem;
+				}
+			}
+			.profile-article__date {
+				font-size: 1.2rem;
+				color: rgba(8, 21, 38, 0.5)
+			}
+			@media (max-width: 500px) {
+				flex-direction: column;
+				padding: 1.5rem;
+			}
+			&--open {
+				h5 {
+					&::before {
+						background-color: #05dfb6;
+					}
+				}
+			}
+			&--close {
+				h5 {
+					&::before {
+						background-color: #adb0b2;
+					}
+				}
+			}
+		}
+		.profile-article__view {
+			width: 20%;
+			color: rgba(8, 21, 38, 0.5);
+			font-size: 1.2rem;
+			padding-right: 1.9rem;
+			padding-left: 2rem;
+			border-right: 1px solid rgba(8, 21, 38, 0.2);
+			border-left: 1px solid rgba(8, 21, 38, 0.2);
+			i {
+				font-size: 1.6rem;
+				margin-right: .4rem;
+			}
+		}
+		.profile-article__edit {
+			width: 10%;
 		}
 	}
 }

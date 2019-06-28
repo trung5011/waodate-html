@@ -1,0 +1,28 @@
+extends _layout/layout
+
+block variables
+	- var title = 'User-concept';
+	- var description = 'Description for User-concept page';
+	- var bodyclass = 'User-concept';
+
+block body
+	include ../lib/profile-page/profile-banner/user
+	include ../lib/profile-page/profile-top/user
+	include ../lib/profile-page/profile-nav/user
+	include ../lib/profile-page/profile-concept-search/index
+	section.profile-article-control
+		.container.container-smaller
+			.row
+				.profile-article-control__left
+					include ../lib/profile-page/profile-article/user
+				.profile-article-control__right
+					include ../lib/profile-page/profile-concept-register/index
+			.row
+				.profile-article-control__left
+					include ../lib/profile-page/profile-article/user
+				.profile-article-control__right
+					include ../lib/profile-page/profile-concept-register/index
+			.row
+				.col-12
+						include ../lib/pagination/index
+	include ../lib/home/sec-2/index
