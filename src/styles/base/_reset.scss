@@ -271,7 +271,7 @@ textarea {
 	content: "\e901";
   }
   .icon-chat:before {
-	content: "\e902";
+	content: "\e906";
   }
   .icon-clock:before {
 	content: "\e903";
@@ -280,7 +280,7 @@ textarea {
 	content: "\e904";
   }
   .icon-favorite:before {
-	content: "\e905";
+	content: "\e909";
   }
   .icon-map-pin:before {
 	content: "\e906";
@@ -289,7 +289,7 @@ textarea {
 	content: "\e907";
   }
   .icon-search:before {
-	content: "\e908";
+	content: "\e90c";
   }
   .icon-user:before {
 	content: "\e909";
@@ -298,3 +298,26 @@ textarea {
 	content: "\e90a";
   }
   
+  .icon-wallet:before {
+	content: "\e900";
+  }
+  .icon-logout:before {
+	content: "\e901";
+  }
+  .icon-user:before {
+	content: "\e902";
+  }
+  .icon-vip:before {
+	content: "\e903";
+  }
+
+  .icon-notification:before {
+	content: "\e911";
+  }
+
+  .icon-close:before {
+	content: "\e912";
+  }
+  .icon-edit:before {
+	content: "\e913";
+  }

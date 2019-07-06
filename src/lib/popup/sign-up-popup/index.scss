@@ -1,0 +1,28 @@
+.sign-up-popup {
+	&__header {
+		padding: 2rem;
+		h3 {
+			font-size: 2.5rem;
+			font-weight: 700;
+			margin-bottom: 0;
+			@media (min-width: 992px) {
+				font-size: 4rem;
+			}
+		}
+		@media (min-width: 992px) {
+			padding: 6.4rem 4rem 4rem 4rem;
+		}
+	}
+	.wao-form__noted {
+		margin-bottom: 2.8rem;
+	}
+	.wao-form__body {
+		margin-bottom: 0;
+	}
+	.wao-form__footer {
+		padding: 2rem;
+		@media (min-width: 992px) {
+			padding: 3.2rem 4rem 4rem 4rem;
+		}
+	}
+}

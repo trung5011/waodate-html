@@ -1,0 +1,49 @@
+.wao-popup{
+	&__backdrop {
+		position: fixed;
+		top: 0;
+		left: 0;
+		background-color: rgba(0, 0, 0, .75);
+		cursor: pointer;
+		z-index: 9997;
+		opacity: 0;
+		visibility: hidden;
+		transition: all .4s ease-in-out;
+		width: 100%;
+		height: 100%;
+	}
+	&__container {
+		background-color: #ffffff;
+		max-height: calc(100vh - 55px * 2);
+		overflow: auto;
+	}
+	&__content {
+		max-width: 56.8rem;
+		display: inline-block;
+		width: 100%;
+		opacity: 0;
+		visibility: hidden;
+		transition: all .2s ease-in-out;
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%) scale(0.8);
+		z-index: 9999;
+		padding: 10px;
+	}
+	&__wrapper {
+		padding: 1rem 1rem 0;
+	}
+}
+
+.wao-popup--open {
+	.wao-popup__content {
+		opacity: 1;
+		visibility: visible;
+		transform: translate(-50%, -50%) scale(1);
+	}
+	.wao-popup__backdrop {
+		opacity: 1;
+		visibility: visible;
+	}
+}

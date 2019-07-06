@@ -6,7 +6,9 @@ module.exports = function (gulp, $, browserSync) {
 				'bower_components/popper.js/dist/umd/popper.min.js',
 				'bower_components/bootstrap/dist/js/bootstrap.min.js',
 				'bower_components/OwlCarousel/dist/owl.carousel.min.js',
-				'bower_components/fancybox/dist/jquery.fancybox.min.js'
+				'bower_components/fancybox/dist/jquery.fancybox.min.js',
+				'src/resource/js/mapping.js',
+				'src/resource/js/mapping-listener.js'
 			])
 			.pipe($.concat('thuvien.js'))
 			.pipe(gulp.dest('./dist/js'));

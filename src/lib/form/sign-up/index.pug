@@ -40,19 +40,20 @@ section.wao-register-main
 								.col-md-6.form-group
 									label Nhắc lại mật khẩu
 									input.form-control(type="password", name="")
-					.wao-form__noted
-						input(type="checkbox", name="")
-						label(for="")
-							| Bằng việc nhấn vào nút đăng ký, tôi đã đồng ý với 
-							a(href="") Điều Khoản Sử Dụng 
-							| và 
-							a(href="") Chính Sách Bảo Mật 
-							| của WaoDate
-					.wao-form__btnGroup
-						.row
-							.col-md-6
-								button.wao-form__btn.wao-form__btn--ouline.br-8(type="submit") Hủy
-							.col-md-6
-								button.wao-form__btn.wao-form__btn--danger.wao-form__btn--disable.br-8(type="submit") Đăng ký
+					.wao-form__footer
+						.wao-form__noted
+							input(type="checkbox", name="")
+							label(for="")
+								| Bằng việc nhấn vào nút đăng ký, tôi đã đồng ý với 
+								a(href="") Điều Khoản Sử Dụng 
+								| và 
+								a(href="") Chính Sách Bảo Mật 
+								| của WaoDate
+						.wao-form__btnGroup
+							.row
+								.col-md-6
+									button.wao-form__btn.wao-form__btn--ouline.br-8(type="submit") Hủy
+								.col-md-6
+									button.wao-form__btn.wao-form__btn--danger.wao-form__btn--disable.br-8(type="submit") Đăng ký
 			.col-md-4
 				include ../../slidebar-left/no-fb

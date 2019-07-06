@@ -1,0 +1,57 @@
+.wao-popup__wrapper.sign-up-popup
+	.wao-popup__backdrop.wao-popup__backdrop--closable
+	.wao-popup__content
+		.wao-popup__container.br-8
+			.sign-up-popup__header
+				h3 Đăng Ký
+			form.sign-up-popup__form.wao-form(action="")
+				.wao-form__row.wao-form__body
+					.wao-form__body-container
+						.row
+							.col-md-6.form-group
+								label Họ
+								input.form-control(type="text", name="")
+							.col-md-6.form-group
+								label Tên
+								input.form-control(type="text", name="")
+							.col-12.form-group
+								label Nơi sống
+								.form-select-2
+									.form-select
+										select.form-control(name="")
+											option(value="") - Thành phố
+									.form-select
+										select.form-control(name="")
+											option(value="") - Quận huyện
+							.col-md-6.form-group
+								label Email
+								input.form-control(type="datetime", name="")
+							.col-md-6.form-group
+								label Giới tính
+								.form-select
+									select.form-control(name="")
+										option(value="") Giới tính 1
+							.col-12.form-group
+								label Username
+								input.form-control(type="text", name="")
+							.col-md-6.form-group
+								label Mật khẩu
+								input.form-control(type="password", name="")
+							.col-md-6.form-group
+								label Nhắc lại mật khẩu
+								input.form-control(type="password", name="")
+				.wao-form__footer
+					.wao-form__noted
+						input(type="checkbox", name="", checked="")
+						label(for="")
+							| Bằng việc nhấn vào nút đăng ký, tôi đã đồng ý với 
+							a(href="") Điều Khoản Sử Dụng 
+							| và 
+							a(href="") Chính Sách Bảo Mật 
+							| của WaoDate
+					.wao-form__btnGroup
+						.row
+							.col-md-6
+								button.wao-form__btn.wao-form__btn--ouline.br-8(type="submit") Hủy
+							.col-md-6
+								button.wao-form__btn.wao-form__btn--danger.wao-form__btn--disable.br-8(type="submit") Đăng ký

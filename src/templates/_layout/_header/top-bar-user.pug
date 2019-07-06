@@ -1,0 +1,61 @@
+.wao-topbar
+	.wao-topbar__left
+		.wao-topbar__search
+			input(type="text", name="" placeholder="Tìm theo tên, chủ đề hoặc concept...")
+			button(type="button" class="wao-topbar__search-btn")
+				i.icon-search
+	.wao-topbar__icons
+		.wao-topbar__toggle
+			i.fa.fa-bars
+	.wao-topbar__logo
+		a(href="/")
+			img(src="./img/logo.png", alt="WaoDate", srcset="")
+	.wao-topbar__right
+		.wao-topbar__social
+			a(href="#")
+				i.fa.fa-facebook
+			a(href="#")
+				i.fa.fa-youtube-play
+		.wao-topbar__tools
+			a.wao-topbar__message(href="#")
+				i.icon-chat
+			.wao-topbar__notification(href="#")
+				.wao-topbar__dropdown-toggle-notification
+					i.icon-notification
+				.wao-topbar__dropdown.wao-topbar__dropdown-notification
+					.wao-topbar__dropdown-notification-header
+						h4 Thông báo
+						a(href="/notification.html") Xem tất cả
+					.wao-topbar__dropdown-notification-body
+						- for(var x = 1; x < 8; x++)
+							a.wao-topbar__dropdown-notification-item.wao-topbar__dropdown-notification-item--unSeen(href="#")
+								img(src="./img/nav-01.png", alt="")
+								.wao-topbar__dropdown-notification-dicription
+									h5
+										| Stephanie Bailey
+										span 26
+									p Aenean tincidunt scelerisque volutpat. Aliquam dignissim auctor volutpat. Phasellus vel laoreet nunc. Orci varius natoque penatibus et magnis dis parturient montes.
+						
+		.wao-topbar__btn
+			.wao-topbar__btn-user(href="#")
+				.wao-topbar__dropdown-toggle-account
+					i.icon-user
+					p user name
+				.wao-topbar__dropdown.wao-topbar__dropdown-account
+					a.wao-topbar__dropdown-account-item(href="#")
+						i.icon-user
+						| Trang Cá Nhân
+					a.wao-topbar__dropdown-account-item(href="#")
+						i.icon-favorite
+						| Tạo Concept
+					a.wao-topbar__dropdown-account-item.wao-topbar__dropdown-account-item--active(href="#")
+						i.icon-vip
+						| Nâng Cấp VIP
+					a.wao-topbar__dropdown-account-item(href="#")
+						i.icon-wallet
+						| Nạp Point
+						span 1.000 point
+					a.wao-topbar__dropdown-account-item(href="#")
+						i.icon-logout
+						| Đăng Xuất
+
