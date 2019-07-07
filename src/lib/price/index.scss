@@ -1,0 +1,100 @@
+.wao-price {
+	@media (min-width: 768px) {
+		padding-top: 3.7rem;
+	}
+	h1 {
+		font-size: 3rem;
+		line-height: 1.3;
+		font-weight: 700;
+		text-align: center;
+		@media (min-width: 992px) {
+			font-size: 4rem;
+			margin-bottom: 5.2rem;
+		}
+	}
+	&__item-inner {
+		background-color: #ffffff;
+		transition: all .3s ease-in-out;
+		&:hover {
+			box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+			transform: translateY(-10px);
+		}
+	}
+	&__header {
+		padding: 2.4rem 2.4rem 2rem 2.4rem;
+		border-bottom: 4px solid transparent;
+	}
+	&__plan, .wao-price__point--old {
+		font-size: 1.8rem;
+		line-height: 1.33;
+		font-weight: 400;
+	}
+	&__plan {
+		margin-bottom: 1.6rem;
+	}
+	&__point {
+		display: flex;
+		align-items: baseline;
+		&--new {
+			font-size: 3rem;
+			line-height: 1.2;
+			font-weight: 700;
+		}
+		&--old {
+			margin-left: .8rem;
+			text-decoration: line-through;
+		}
+		span {
+			font-size: 1.2rem;
+			font-weight: 400;
+			display: inline-block;
+			margin-left: .4rem;
+		}
+	}
+	&__body {
+		padding: 2.4rem 2.4rem 3.2rem;
+		
+	}
+	&__submit {
+		a {
+			display: block;
+			height: 4.4rem;
+			line-height: 4.4rem;
+			text-align: center;
+			font-size: 1.4rem;
+			font-weight: 700;
+			&:hover {
+				color: #081526;
+			}
+		}
+	}
+	&__item {
+		@media (max-width: 767.98px) {
+			margin-top: 2rem;
+		}
+		&--basic {
+			.wao-price__header {
+				border-color: $xanh;
+			}
+			.wao-price__submit {
+				background-color: $xanh;
+			}
+		}
+		&--standard {
+			.wao-price__header {
+				border-color: $cam;
+			}
+			.wao-price__submit {
+				background-color: $cam;
+			}
+		}
+		&--vip {
+			.wao-price__header {
+				border-color: $vang;
+			}
+			.wao-price__submit {
+				background-color: $vang;
+			}
+		}
+	}
+}

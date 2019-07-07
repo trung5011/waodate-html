@@ -135,6 +135,10 @@
 		}
 		.wao-topbar__notification, .wao-topbar__message{
 			margin-right: 2rem;
+			cursor: pointer;
+			&--active {
+				color: #ff6060;
+			}
 		}
 		svg {
 			fill: #081526;
@@ -418,10 +422,8 @@
 		}
 	}
 	.wao-topbar__dropdown-toggle-notification {
-		@media (max-width: 799.98px) {
-			&--active {
-				color: #ff6060;
-			}
+		&--active {
+			color: #ff6060;
 		}
 	}
 }
