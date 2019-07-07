@@ -293,15 +293,22 @@ function profilePage() {
 }
 
 function waoPopup() {
-	var signUpBtn = $('.wao-header .wao-topbar__btn-register');
-	var waoPopupbackdrop = $('.wao-popup__backdrop--closable');
-	var $body = $('body');
+	var $signUpBtn = $('.wao-header .wao-topbar__btn-register');
+	var $waoPopupbackdrop = $('.wao-popup__backdrop--closable');
+	var $regProfileBtn = $('.profile-article-control__right .profile-register__footer a');
+	var $popupWrapper = $('.wao-popup__wrapper');
 
-	signUpBtn.on('click', function () {
-		$body.toggleClass('wao-popup--open');
+	$signUpBtn.on('click', function () {
+		var thisAttr = $(this).attr('data-popup');
+		$('#' + thisAttr).toggleClass('wao-popup--open');
 	});
-	waoPopupbackdrop.on('click', function () {
-		$body.removeClass('wao-popup--open');
+	$waoPopupbackdrop.on('click', function () {
+		$popupWrapper.removeClass('wao-popup--open');
+	});
+
+	$regProfileBtn.on('click', function () {
+		var thisAttr = $(this).attr('data-popup');
+		$('#' + thisAttr).toggleClass('wao-popup--open');
 	});
 }
 

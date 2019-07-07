@@ -1,0 +1,29 @@
+.register-user-popup {
+	.profile-register__item {
+		padding: 2rem 0;
+		&:first-child {
+			padding-top: 0;
+		}
+	}
+	.user-location {
+		margin-left: 1.3rem;
+	}
+	.wao-popup__container {
+		max-height: inherit;
+	}
+	.profile-register__user-decription {
+		h4 {
+			span {
+				display: inline-block;
+				margin-left: .8rem;
+			}
+		}
+	}
+	.profile-register__body {
+		max-height: calc(100vh - 150px);
+		@media (min-width: 992px) {
+
+			max-height: calc(100vh - 91px);
+		}
+	}
+}

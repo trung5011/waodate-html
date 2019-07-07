@@ -1,0 +1,34 @@
+.wao-popup__wrapper.register-user-popup#register1
+	.wao-popup__backdrop.wao-popup__backdrop--closable
+	.wao-popup__content
+		.wao-popup__container.br-8
+			.profile-register
+				.profile-register__header
+					h3 Người đăng ký
+					span (160 người)
+				.profile-register__body
+					- for(x = 1; x < 20; x++)
+						.profile-register__item
+							.profile-register__item-inner
+								.profile-register__user.profile-register__user--online
+									img(src="./img/nav-01.png", alt="")
+									.profile-register__user-decription
+										h4
+											| Dollie Reid
+											span 26
+										.profile-register__user-decription-info
+											.profile-register__tool-view
+												i.icon-view
+												| 50k
+											.profile-register__tool-love
+												i.icon-favorite
+												| 7k
+											span.user-location TP. Hồ Chí Minh
+												
+								.profile-register__action
+									button.profile-register__action-check(type="submit")
+										i.icon-check
+									button.profile-register__action-delete(type="submit")
+										i.icon-close
+							
+							p Pellentesque ut mollis lorem. Suspendisse a facilisis quam, nec eleifend nunc. Etiam ornare felis vel tortor dapibus, et eleifend mauris gravida. Donec in lacus condimentum, facilisis lectus id, iaculis tellus.

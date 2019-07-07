@@ -1,7 +1,7 @@
 .profile-article {
 	background-color: #fff;
 	@media (max-width: 991.98px) {
-		margin-top: 2.4rem;
+		// margin-top: 2.4rem;
 	}
 	&__header {
 		h3 {
@@ -19,7 +19,7 @@
 	}
 	&__item {
 		padding: 2rem 0;
-		border-bottom: 1px solid #ececec;
+		// border-bottom: 1px solid #ececec;
 		display: flex;
 		@media (max-width: 599.98px) {
 			flex-direction: column
@@ -169,6 +169,7 @@
 		@media (min-width: 992px) {
 			border-top-left-radius: 8px;
 			border-bottom-left-radius: 8px;
+			height: 100%;
 		}
 		.profile-article__left {
 			display: flex;
@@ -214,7 +215,7 @@
 			}
 			@media (max-width: 500px) {
 				flex-direction: column;
-				padding: 1.5rem;
+				padding: 1rem;
 			}
 			&--open {
 				h5 {
@@ -246,6 +247,7 @@
 		}
 		.profile-article__edit {
 			width: 10%;
+			font-size: 2rem;
 		}
 	}
 }

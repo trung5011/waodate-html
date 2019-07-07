@@ -3,115 +3,29 @@
 		h3 Người đăng ký
 		span (160 người)
 	.profile-register__body
-		.profile-register__item
-			.profile-register__user.profile-register__user--online
-				img(src="./img/nav-01.png", alt="")
-				h4
-					| Dollie Reid
-					span 26
-			.profile-register__action
-				button.profile-register__action-check(type="submit")
-					i.fa.fa-check
-				button.profile-register__action-delete(type="submit")
-					i.fa.fa-times
-		.profile-register__item
-			.profile-register__user.profile-register__user--online
-				img(src="./img/nav-01.png", alt="")
-				h4
-					| Dollie Reid
-					span 26
-			.profile-register__action
-				button.profile-register__action-check(type="submit")
-					i.fa.fa-check
-				button.profile-register__action-delete(type="submit")
-					i.fa.fa-times
-		.profile-register__item
-			.profile-register__user.profile-register__user--online
-				img(src="./img/nav-01.png", alt="")
-				h4
-					| Dollie Reid
-					span 26
-			.profile-register__action
-				button.profile-register__action-check(type="submit")
-					i.fa.fa-check
-				button.profile-register__action-delete(type="submit")
-					i.fa.fa-times
-		.profile-register__item
-			.profile-register__user
-				img(src="./img/nav-01.png", alt="")
-				h4
-					| Dollie Reid
-					span 26
-			.profile-register__action
-				button.profile-register__action-check(type="submit")
-					i.fa.fa-check
-				button.profile-register__action-delete(type="submit")
-					i.fa.fa-times
-		.profile-register__item
-			.profile-register__user.profile-register__user--online
-				img(src="./img/nav-01.png", alt="")
-				h4
-					| Dollie Reid
-					span 26
-			.profile-register__action
-				button.profile-register__action-check(type="submit")
-					i.fa.fa-check
-				button.profile-register__action-delete(type="submit")
-					i.fa.fa-times
-		.profile-register__item
-			.profile-register__user
-				img(src="./img/nav-01.png", alt="")
-				h4
-					| Dollie Reid
-					span 26
-			.profile-register__action
-				button.profile-register__action-check(type="submit")
-					i.fa.fa-check
-				button.profile-register__action-delete(type="submit")
-					i.fa.fa-times
-		.profile-register__item
-			.profile-register__user.profile-register__user--online
-				img(src="./img/nav-01.png", alt="")
-				h4
-					| Dollie Reid
-					span 26
-			.profile-register__action
-				button.profile-register__action-check(type="submit")
-					i.fa.fa-check
-				button.profile-register__action-delete(type="submit")
-					i.fa.fa-times
-		.profile-register__item
-			.profile-register__user
-				img(src="./img/nav-01.png", alt="")
-				h4
-					| Dollie Reid
-					span 26
-			.profile-register__action
-				button.profile-register__action-check(type="submit")
-					i.fa.fa-check
-				button.profile-register__action-delete(type="submit")
-					i.fa.fa-times
-		.profile-register__item
-			.profile-register__user.profile-register__user--online
-				img(src="./img/nav-01.png", alt="")
-				h4
-					| Dollie Reid
-					span 26
-			.profile-register__action
-				button.profile-register__action-check(type="submit")
-					i.fa.fa-check
-				button.profile-register__action-delete(type="submit")
-					i.fa.fa-times
-		.profile-register__item
-			.profile-register__user
-				img(src="./img/nav-01.png", alt="")
-				h4
-					| Dollie Reid
-					span 26
-			.profile-register__action
-				button.profile-register__action-check(type="submit")
-					i.fa.fa-check
-				button.profile-register__action-delete(type="submit")
-					i.fa.fa-times
+		- for(x = 1; x < 6; x++)
+			.profile-register__item
+				.profile-register__item-inner
+					.profile-register__user.profile-register__user--online
+						img(src="./img/nav-01.png", alt="")
+						.profile-register__user-decription
+							h4
+								| Dollie Reid
+							.profile-register__user-decription-info
+								span.user-age 26
+								span.user-location TP. Hồ Chí Minh
+					.profile-register__action
+						button.profile-register__action-check(type="submit")
+							i.icon-check
+						button.profile-register__action-delete(type="submit")
+							i.icon-close
+				.profile-register__tool
+					.profile-register__tool-view
+						i.icon-view
+						| 50k
+					.profile-register__tool-love
+						i.icon-favorite
+						| 7k
+				p Pellentesque ut mollis lorem. Suspendisse a facilisis quam, nec eleifend nunc. Etiam ornare felis vel tortor dapibus, et eleifend mauris gravida. Donec in lacus condimentum, facilisis lectus id, iaculis tellus.
 	.profile-register__footer
-		a(href="#") Xem tất cả
+		a(href="javascript:void(0)" data-popup="register1") Xem tất cả

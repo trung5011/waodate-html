@@ -46,11 +46,9 @@ html, body {
 }
 .container-small{
 	max-width: 144.8rem;
-	margin: auto;
 }
 .container-smaller{
-	max-width: 96.8rem;
-	margin: auto;
+	max-width: 99.8rem;
 }
 
 .container-smallest {
@@ -58,7 +56,11 @@ html, body {
 }
 
 .container-custom {
-	max-width: 86.8rem;
+	max-width: 90rem;
+}
+
+.container-custom2 {
+	max-width: 99.8rem;
 }
 
 body {
