@@ -199,14 +199,25 @@
 			breakpoint: 799
 		}).watch();
 
-		let headerSocial = new MappingListener({
+		
+		let headerSocialGuest = new MappingListener({
 			selector: '.wao-header .wao-topbar__social',
-			desktopWrapper: ".wao-header .wao-topbar__right .wao-topbar__tools",
+			desktopWrapper: ".wao-header .wao-topbar__right .wao-topbar__btn",
 			desktopMethod: "insertBefore",
 			mobileWrapper: ".wao-header .wao-menu",
 			mobileMethod: "appendTo",
 			breakpoint: 799
 		}).watch();
+		if ($('header').hasClass('wao-header--user')) {
+			let headerSocial = new MappingListener({
+				selector: '.wao-header .wao-topbar__social',
+				desktopWrapper: ".wao-header .wao-topbar__right .wao-topbar__tools",
+				desktopMethod: "insertBefore",
+				mobileWrapper: ".wao-header .wao-menu",
+				mobileMethod: "appendTo",
+				breakpoint: 799
+			}).watch();
+		}
 
 		
 	}
@@ -280,7 +291,7 @@ function waoPopup() {
 	let $waoPopupbackdrop = $('.wao-popup__backdrop--closable');
 	let $regProfileBtn =$('.profile-article-control__right .profile-register__footer a');
 	let $popupWrapper = $('.wao-popup__wrapper');
-
+	let $refuseUpdate = $('.updateAccount-popup .wao-popup__btn-refuse')
 	$signUpBtn.on('click', function() {
 		let thisAttr = $(this).attr('data-popup');
 		$('#' + thisAttr).toggleClass('wao-popup--open');
@@ -292,6 +303,10 @@ function waoPopup() {
 	$regProfileBtn.on('click', function() {
 		let thisAttr = $(this).attr('data-popup');
 		$('#' + thisAttr).toggleClass('wao-popup--open');
+	})
+	$refuseUpdate.on('click', function() {
+		let thisAttr = $(this).attr('data-popup');
+		$('#' + thisAttr).removeClass('wao-popup--open');
 	})
 }
 

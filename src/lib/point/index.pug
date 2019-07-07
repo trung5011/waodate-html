@@ -1,0 +1,75 @@
+section.wao-point
+	.container
+		.row
+			.col-lg-9
+				form.wao-form(action="")
+					.wao-form__row.wao-form__header.br-8
+						h3 Mua Point
+					.wao-form__row.wao-form__options.row
+						.col-md-4.wao-form__option-item.wao-form__option-basic
+							.wao-form__option-inner.br-8
+								.wao-form__option-title
+									h4 1000
+									span.point-plus.basic-point-plus +100
+									span point
+								.wao-form__option-select
+									input#basic(type='radio', name='radio-group')
+									label(for='basic') 1.000.000 VNĐ
+						.col-md-4.wao-form__option-item.wao-form__option-standard
+							.wao-form__option-inner.br-8
+								.wao-form__option-title
+									h4 5000
+									span.point-plus.standard-point-plus +500
+									span point
+								.wao-form__option-select
+									input#standard(type='radio', name='radio-group')
+									label(for='standard') 5.000.000 VNĐ
+						.col-md-4.wao-form__option-item.wao-form__option-vip
+							.wao-form__option-inner.br-8
+								.wao-form__option-title
+									h4 8000
+									span.point-plus.vip-point-plus +800
+									span point
+								.wao-form__option-select
+									input#vip(type='radio', name='radio-group')
+									label(for='vip') 8.000.000 VNĐ
+					.wao-form__row.wao-form__card-options.mb-0
+						h4 Chọn phương thức thanh toán
+						.row
+							.col-md-4
+								.wao-form__option-card-select
+									input#credit(type='checkbox', name='checkbox-group')
+									label(for='credit') Thẻ nội địa
+									img(src="./img/atm.svg", alt="")
+								.wao-form__option-card-select
+									input#mastercard(type='checkbox', name='checkbox-group')
+									label(for='mastercard') Mastercard
+									img(src="./img/mastercard.svg", alt="")
+								.wao-form__option-card-select
+									input#visa(type='checkbox', name='checkbox-group')
+									label(for='visa') Visa
+									img(src="./img/visa.svg", alt="")
+							.col-lg-8.wao-form__body
+								.row
+									.col-12.form-group
+										label Mã thẻ
+										input.form-control(type="text", name="")
+									.col-12.form-group
+										label Tên chủ thẻ
+										input.form-control(type="text", name="")
+									.col-8.form-group
+										label Ngày hết hạn
+										.form-select-2
+											.form-select
+												select.form-control(name="")
+													option(value="") - Tháng
+											.form-select
+												select.form-control(name="")
+													option(value="") - Năm
+									.col-4.form-group
+										label CVV
+										input.form-control(type="text", name="")
+									.col-12.wao-form__btnGroup
+										button.wao-form__btn.wao-form__btn--danger.br-8(type="submit") Thanh toán
+			.col-lg-3
+				include ../slidebar-left/no-fb

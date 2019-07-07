@@ -222,14 +222,24 @@ function insertEl() {
 		breakpoint: 799
 	}).watch();
 
-	var headerSocial = new MappingListener({
+	var headerSocialGuest = new MappingListener({
 		selector: '.wao-header .wao-topbar__social',
-		desktopWrapper: ".wao-header .wao-topbar__right .wao-topbar__tools",
+		desktopWrapper: ".wao-header .wao-topbar__right .wao-topbar__btn",
 		desktopMethod: "insertBefore",
 		mobileWrapper: ".wao-header .wao-menu",
 		mobileMethod: "appendTo",
 		breakpoint: 799
 	}).watch();
+	if ($('header').hasClass('wao-header--user')) {
+		var headerSocial = new MappingListener({
+			selector: '.wao-header .wao-topbar__social',
+			desktopWrapper: ".wao-header .wao-topbar__right .wao-topbar__tools",
+			desktopMethod: "insertBefore",
+			mobileWrapper: ".wao-header .wao-menu",
+			mobileMethod: "appendTo",
+			breakpoint: 799
+		}).watch();
+	}
 }
 
 function headerAction() {
@@ -297,7 +307,7 @@ function waoPopup() {
 	var $waoPopupbackdrop = $('.wao-popup__backdrop--closable');
 	var $regProfileBtn = $('.profile-article-control__right .profile-register__footer a');
 	var $popupWrapper = $('.wao-popup__wrapper');
-
+	var $refuseUpdate = $('.updateAccount-popup .wao-popup__btn-refuse');
 	$signUpBtn.on('click', function () {
 		var thisAttr = $(this).attr('data-popup');
 		$('#' + thisAttr).toggleClass('wao-popup--open');
@@ -309,6 +319,10 @@ function waoPopup() {
 	$regProfileBtn.on('click', function () {
 		var thisAttr = $(this).attr('data-popup');
 		$('#' + thisAttr).toggleClass('wao-popup--open');
+	});
+	$refuseUpdate.on('click', function () {
+		var thisAttr = $(this).attr('data-popup');
+		$('#' + thisAttr).removeClass('wao-popup--open');
 	});
 }
 

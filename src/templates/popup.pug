@@ -1,0 +1,9 @@
+extends _layout/layout-user
+
+block variables
+	- var title = 'popup';
+	- var description = 'Description for popup page';
+	- var bodyclass = 'popup';
+
+block body
+	include ../lib/popup/popup-onload/index

@@ -1,1 +1,11 @@
 extends _layout/layout-user
+
+
+block variables
+	- var title = 'Point';
+	- var description = 'Description for Point page';
+	- var bodyclass = 'point';
+
+block body
+	include ../lib/point/index
+	include ../lib/home/sec-2/index
